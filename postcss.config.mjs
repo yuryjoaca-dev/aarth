@@ -1,7 +1,6 @@
+// PostCSS config intentionally empty — Tailwind CSS is handled via @tailwindcss/vite plugin
 const config = {
-  plugins: {
-    "@tailwindcss/postcss": {},
-  },
+  plugins: {},
 };
 
 export default config;

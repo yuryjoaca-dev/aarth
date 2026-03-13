@@ -27,10 +27,10 @@ const stats = [
   { value: '1yr', label: 'Workmanship Warranty' },
 ]
 const gallery = [
-  { src: 'https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=800&q=80', alt: 'Modern open office' },
-  { src: 'https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80', alt: 'Office meeting room' },
-  { src: 'https://images.unsplash.com/photo-1524758631624-e2822e304c36?w=800&q=80', alt: 'Corporate reception' },
-  { src: 'https://images.unsplash.com/photo-1564069114553-7215e1ff1890?w=800&q=80', alt: 'Private office suite' },
+  { src: '/offices/office1.jpg', alt: 'Modern open office' },
+  { src: '/offices/office2.jpg', alt: 'Office meeting room' },
+  { src: '/offices/office3.jpg', alt: 'Corporate reception' },
+  { src: '/offices/office4.jpg', alt: 'Private office suite' },
 ]
 
 export default function OfficesPage() {
@@ -41,7 +41,7 @@ export default function OfficesPage() {
       {/* Hero */}
       <section className="relative h-[80vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
-          <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=1920&q=80" alt="Office renovation" className="w-full h-full object-cover absolute inset-0" />
+          <img src="/offices/office1.jpg" alt="Office renovation" className="w-full h-full object-cover absolute inset-0" />
           <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/65 to-black/80" />
         </div>
         <motion.div initial="hidden" animate="show" variants={stagger(0.12)} className="relative z-10 max-w-4xl mx-auto px-6 text-center">
@@ -84,7 +84,7 @@ export default function OfficesPage() {
               </motion.div>
             </div>
             <motion.div variants={fadeUp} className="relative overflow-hidden aspect-[4/3]">
-              <img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=800&q=80" alt="Office space" className="w-full h-full object-cover absolute inset-0" />
+              <img src="/offices/office2.jpg" alt="Office space" className="w-full h-full object-cover absolute inset-0" />
             </motion.div>
           </motion.div>
         </div>

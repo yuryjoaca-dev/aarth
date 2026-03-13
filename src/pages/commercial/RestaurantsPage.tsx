@@ -27,10 +27,10 @@ const stats = [
   { value: '1yr', label: 'Workmanship Warranty' },
 ]
 const gallery = [
-  { src: 'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=80', alt: 'Restaurant interior' },
-  { src: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&q=80', alt: 'Restaurant dining area' },
-  { src: 'https://images.unsplash.com/photo-1590846406792-0adc7f938f1d?w=800&q=80', alt: 'Restaurant bar' },
-  { src: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&q=80', alt: 'Modern restaurant' },
+  { src: '/restaurants/restaurant1.jpg', alt: 'Restaurant interior' },
+  { src: '/restaurants/restaurant2.jpg', alt: 'Restaurant dining area' },
+  { src: '/restaurants/restaurant3.jpg', alt: 'Restaurant bar' },
+  { src: '/restaurants/restaurant4.jpg', alt: 'Modern restaurant' },
 ]
 
 export default function RestaurantsPage() {
@@ -41,7 +41,7 @@ export default function RestaurantsPage() {
       {/* Hero */}
       <section className="relative h-[80vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
-          <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1920&q=80" alt="Restaurant renovation" className="w-full h-full object-cover absolute inset-0" />
+          <img src="/restaurants/restaurant2.jpg" alt="Restaurant renovation" className="w-full h-full object-cover absolute inset-0" />
           <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/65 to-black/80" />
         </div>
         <motion.div initial="hidden" animate="show" variants={stagger(0.12)} className="relative z-10 max-w-4xl mx-auto px-6 text-center">
@@ -84,7 +84,7 @@ export default function RestaurantsPage() {
               </motion.div>
             </div>
             <motion.div variants={fadeUp} className="relative overflow-hidden aspect-[4/3]">
-              <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&q=80" alt="Restaurant interior" className="w-full h-full object-cover absolute inset-0" />
+              <img src="/restaurants/restaurant3.jpg" alt="Restaurant interior" className="w-full h-full object-cover absolute inset-0" />
             </motion.div>
           </motion.div>
         </div>

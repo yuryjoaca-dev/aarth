@@ -1,7 +1,9 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import { CheckCircle2, ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
 import SEO from "../../components/SEO";
+import Lightbox from "../../components/Lightbox";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 24 },
@@ -13,12 +15,12 @@ const stagger = (delay = 0.1) => ({
 });
 
 const gallery = [
-  "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800&q=80",
-  "https://images.unsplash.com/photo-1620626011761-996317702b4b?w=800&q=80",
-  "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&q=80",
-  "https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=800&q=80",
-  "https://images.unsplash.com/photo-1507652313519-d4e9174996dd?w=800&q=80",
-  "https://images.unsplash.com/photo-1570639204717-4c6daf37e36a?w=800&q=80",
+  "/Bathrooms/b1.jpg",
+  "/Bathrooms/b2.jpg",
+  "/Bathrooms/b3.jpg",
+  "/Bathrooms/b4.jpg",
+  "/Bathrooms/b5.jpg",
+  "/Bathrooms/b6.jpg",
 ];
 const stats = [
   { v: "120+", l: "Kitchens Completed" },
@@ -28,13 +30,15 @@ const stats = [
 ];
 
 export default function BathroomsPage() {
+  const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
+
   return (
     <>
       <SEO title="Bathroom Renovations Edmonton" description="Luxury bathroom renovations in Edmonton. Walk-in showers, freestanding tubs, heated floors. Free quotes." url="/residential/bathrooms" />
 
       <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
-          <img src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=1920&q=80" alt="Bathroom renovation" className="w-full h-full object-cover absolute inset-0" />
+          <img src="/Bathrooms/bh1.jpg" alt="Bathroom renovation" className="w-full h-full object-cover absolute inset-0" />
           <div className="absolute inset-0 bg-gradient-to-b from-black/35 via-black/55 to-black/75" />
         </div>
         <div className="relative z-10 text-center text-white px-6 max-w-4xl mx-auto">
@@ -87,8 +91,16 @@ export default function BathroomsPage() {
             <motion.h2 variants={fadeUp} className="text-4xl font-bold tracking-tight text-center text-slate-900 mb-12">Bathroom Gallery</motion.h2>
             <motion.div variants={stagger(0.08)} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
               {gallery.map((src, i) => (
-                <motion.div key={i} variants={fadeUp} className="relative aspect-[4/3] overflow-hidden group">
+                <motion.div
+                  key={i}
+                  variants={fadeUp}
+                  className="relative aspect-[4/3] overflow-hidden group cursor-zoom-in"
+                  onClick={() => setLightboxIndex(i)}
+                >
                   <img src={src} alt={`Bathroom ${i + 1}`} className="w-full h-full object-cover absolute inset-0 group-hover:scale-105 transition-transform duration-700" />
+                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300 flex items-center justify-center">
+                    <span className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-white text-xs uppercase tracking-widest font-medium" style={{ fontFamily: "Inter, sans-serif" }}>View</span>
+                  </div>
                 </motion.div>
               ))}
             </motion.div>
@@ -113,6 +125,8 @@ export default function BathroomsPage() {
           </motion.div>
         </motion.div>
       </section>
+
+      <Lightbox images={gallery} index={lightboxIndex} onChange={setLightboxIndex} />
     </>
   );
 }

@@ -1,7 +1,9 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import { CheckCircle2, ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
 import SEO from "../../components/SEO";
+import Lightbox from "../../components/Lightbox";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 24 },
@@ -13,12 +15,12 @@ const stagger = (delay = 0.1) => ({
 });
 
 const gallery = [
-  "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&q=80",
-  "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80",
-  "https://images.unsplash.com/photo-1560185008-a33f5c7cff9f?w=800&q=80",
-  "https://images.unsplash.com/photo-1571741140674-8949ca7df2a7?w=800&q=80",
-  "https://images.unsplash.com/photo-1600566752547-e939eb17bce1?w=800&q=80",
-  "https://images.unsplash.com/photo-1581858726788-75bc0f6a952d?w=800&q=80",
+  "/Flooring/fs1.jpg",
+  "/Flooring/fs2.jpg",
+  "/Flooring/fs3.jpg",
+  "/Flooring/fs4.jpg",
+  "/Flooring/fs5.jpg",
+  "/Flooring/fs6.jpg",
 ];
 const stats = [
   { v: "120+", l: "Kitchens Completed" },
@@ -28,13 +30,15 @@ const stats = [
 ];
 
 export default function FlooringPage() {
+  const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
+
   return (
     <>
       <SEO title="Flooring Installation Edmonton" description="Hardwood, laminate, tile, vinyl flooring installation in Edmonton. Expert installers, free quotes." url="/residential/flooring" />
 
       <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
-          <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=1920&q=80" alt="Flooring" className="w-full h-full object-cover absolute inset-0" />
+          <img src="/Flooring/fs1.jpg" alt="Flooring" className="w-full h-full object-cover absolute inset-0" />
           <div className="absolute inset-0 bg-gradient-to-b from-black/35 via-black/55 to-black/75" />
         </div>
         <div className="relative z-10 text-center text-white px-6 max-w-4xl mx-auto">
@@ -87,8 +91,16 @@ export default function FlooringPage() {
             <motion.h2 variants={fadeUp} className="text-4xl font-bold tracking-tight text-center text-slate-900 mb-12">Flooring Gallery</motion.h2>
             <motion.div variants={stagger(0.08)} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
               {gallery.map((src, i) => (
-                <motion.div key={i} variants={fadeUp} className="relative aspect-[4/3] overflow-hidden group">
+                <motion.div
+                  key={i}
+                  variants={fadeUp}
+                  className="relative aspect-[4/3] overflow-hidden group cursor-zoom-in"
+                  onClick={() => setLightboxIndex(i)}
+                >
                   <img src={src} alt={`Flooring ${i + 1}`} className="w-full h-full object-cover absolute inset-0 group-hover:scale-105 transition-transform duration-700" />
+                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300 flex items-center justify-center">
+                    <span className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-white text-xs uppercase tracking-widest font-medium" style={{ fontFamily: "Inter, sans-serif" }}>View</span>
+                  </div>
                 </motion.div>
               ))}
             </motion.div>
@@ -113,6 +125,8 @@ export default function FlooringPage() {
           </motion.div>
         </motion.div>
       </section>
+
+      <Lightbox images={gallery} index={lightboxIndex} onChange={setLightboxIndex} />
     </>
   );
 }

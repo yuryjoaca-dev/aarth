@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
@@ -29,6 +30,8 @@ const stats = [
 ];
 
 export default function ProjectsPage() {
+  const [hovered, setHovered] = useState<number | null>(null);
+
   return (
     <>
       <SEO title="Our Projects" description="Browse Aarth Construction's portfolio of completed kitchens, bathrooms, basements, and commercial projects in Edmonton." url="/projects" />
@@ -43,7 +46,7 @@ export default function ProjectsPage() {
             variants={fadeLeft}
             className="relative w-1/2 bg-cover bg-center"
             style={{
-              backgroundImage: "url('https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=1200&q=80')",
+              backgroundImage: "url('/homepage/transformation.jpg')",
               clipPath: "polygon(0 0, 100% 0, 82% 100%, 0% 100%)",
             }}
           >
@@ -69,7 +72,7 @@ export default function ProjectsPage() {
             variants={fadeRight}
             className="relative w-1/2 bg-cover bg-center"
             style={{
-              backgroundImage: "url('https://images.unsplash.com/photo-1497366216548-37526070297c?w=1200&q=80')",
+              backgroundImage: "url('/homepage/commercial.jpg')",
               clipPath: "polygon(18% 0, 100% 0, 100% 100%, 0% 100%)",
             }}
           >
@@ -93,7 +96,7 @@ export default function ProjectsPage() {
         {/* Mobile */}
         <div className="flex flex-col md:hidden">
           <div className="relative h-[60vh]">
-            <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=800&q=80" alt="Before & After" className="w-full h-full object-cover absolute inset-0" />
+            <img src="/homepage/transformation.jpg" alt="Before & After" className="w-full h-full object-cover absolute inset-0" />
             <div className="absolute inset-0 bg-black/55 flex flex-col items-center justify-center text-center text-white px-6">
               <h1 className="text-3xl font-bold mb-5 tracking-tight">Before &amp; After</h1>
               <Link to="/transformations" className="inline-flex items-center gap-2 border border-[#C9963B] text-[#C9963B] hover:bg-[#C9963B] hover:text-white font-medium px-6 py-3 text-xs uppercase tracking-widest transition-all duration-300" style={{ fontFamily: 'Inter, sans-serif' }}>
@@ -102,7 +105,7 @@ export default function ProjectsPage() {
             </div>
           </div>
           <div className="relative h-[60vh]">
-            <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80" alt="Commercial" className="w-full h-full object-cover absolute inset-0" />
+            <img src="/homepage/commercial.jpg" alt="Commercial" className="w-full h-full object-cover absolute inset-0" />
             <div className="absolute inset-0 bg-black/55 flex flex-col items-center justify-center text-center text-white px-6">
               <h1 className="text-3xl font-bold mb-5 tracking-tight">Commercial Projects</h1>
               <Link to="/services" className="inline-flex items-center gap-2 border border-[#C9963B] text-[#C9963B] hover:bg-[#C9963B] hover:text-white font-medium px-6 py-3 text-xs uppercase tracking-widest transition-all duration-300" style={{ fontFamily: 'Inter, sans-serif' }}>
@@ -128,33 +131,46 @@ export default function ProjectsPage() {
         </section>
       </motion.div>
 
-      {/* 4-Category Grid */}
-      <motion.section
-        initial="hidden" whileInView="show" viewport={{ once: true, margin: "-80px" }} variants={stagger(0.1)}
-        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4"
-      >
+      {/* 4-Category Expanding Columns */}
+      <section className="flex flex-col h-[1100px] lg:flex-row lg:h-[80vh]">
         {[
-          { title: "Kitchens", image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=80", link: "/residential/kitchens" },
-          { title: "Basements", image: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80", link: "/residential/basements" },
-          { title: "Flooring", image: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&q=80", link: "/residential/flooring" },
-          { title: "Bathrooms", image: "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800&q=80", link: "/residential/bathrooms" },
-        ].map((item) => (
-          <motion.div key={item.title} variants={fadeUp} className="relative h-[300px] lg:h-[80vh] overflow-hidden group">
+          { title: "Kitchens", image: "/homepage/kitchen.jpg", link: "/residential/kitchens" },
+          { title: "Basements", image: "/homepage/basement.jpg", link: "/residential/basements" },
+          { title: "Flooring", image: "/homepage/flooring.jpg", link: "/residential/flooring" },
+          { title: "Bathrooms", image: "/homepage/bathroom.jpg", link: "/residential/bathrooms" },
+        ].map((item, i) => (
+          <div
+            key={item.title}
+            className="relative overflow-hidden group cursor-pointer"
+            style={{
+              flex: hovered === i ? 2 : hovered !== null ? 0.7 : 1,
+              transition: "flex 0.6s cubic-bezier(0.22, 1, 0.36, 1)",
+              minWidth: 0,
+              minHeight: 0,
+            }}
+            onMouseEnter={() => setHovered(i)}
+            onMouseLeave={() => setHovered(null)}
+            onClick={() => {
+              if (!window.matchMedia("(hover: hover)").matches) {
+                setHovered(prev => prev === i ? null : i);
+              }
+            }}
+          >
             <img src={item.image} alt={item.title} className="w-full h-full object-cover absolute inset-0 group-hover:scale-105 transition-transform duration-700" />
-            <div className="absolute inset-0 bg-black/40 group-hover:bg-black/55 transition-all duration-300" />
-            <div className="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-4">
+            <div className="absolute inset-0 bg-black/40 group-hover:bg-black/55 transition-all duration-500" />
+            <div className="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-6">
               <h3 className="text-3xl font-bold mb-6 tracking-tight">{item.title}</h3>
               <Link
                 to={item.link}
                 className="inline-flex items-center gap-2 border border-[#C9963B] text-[#C9963B] hover:bg-[#C9963B] hover:text-white font-medium px-6 py-3 text-xs uppercase tracking-widest transition-all duration-300 opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0"
-                style={{ fontFamily: 'Inter, sans-serif' }}
+                style={{ fontFamily: "Inter, sans-serif" }}
               >
                 Explore {item.title}
               </Link>
             </div>
-          </motion.div>
+          </div>
         ))}
-      </motion.section>
+      </section>
 
       {/* Stats */}
       <section className="bg-[#111111] text-white">

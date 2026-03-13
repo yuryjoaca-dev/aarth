@@ -27,10 +27,10 @@ const stats = [
   { value: '1yr', label: 'Workmanship Warranty' },
 ]
 const gallery = [
-  { src: 'https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=800&q=80', alt: 'Retail store interior' },
-  { src: 'https://images.unsplash.com/photo-1567401893414-76b7b1e5a7a5?w=800&q=80', alt: 'Boutique storefront' },
-  { src: 'https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?w=800&q=80', alt: 'Retail display fixtures' },
-  { src: 'https://images.unsplash.com/photo-1601924994987-69e26d50dc26?w=800&q=80', alt: 'Modern retail space' },
+  { src: '/store/retail1.jpg', alt: 'Retail store interior' },
+  { src: '/store/retail2.jpg', alt: 'Boutique storefront' },
+  { src: '/store/retail3.jpg', alt: 'Retail display fixtures' },
+  { src: '/store/retail4.jpg', alt: 'Modern retail space' },
 ]
 
 export default function RetailPage() {
@@ -41,7 +41,7 @@ export default function RetailPage() {
       {/* Hero */}
       <section className="relative h-[80vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
-          <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=1920&q=80" alt="Retail space construction" className="w-full h-full object-cover absolute inset-0" />
+          <img src="/store/retail1.jpg" alt="Retail space construction" className="w-full h-full object-cover absolute inset-0" />
           <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/65 to-black/80" />
         </div>
         <motion.div initial="hidden" animate="show" variants={stagger(0.12)} className="relative z-10 max-w-4xl mx-auto px-6 text-center">
@@ -84,7 +84,7 @@ export default function RetailPage() {
               </motion.div>
             </div>
             <motion.div variants={fadeUp} className="relative overflow-hidden aspect-[4/3]">
-              <img src="https://images.unsplash.com/photo-1567401893414-76b7b1e5a7a5?w=800&q=80" alt="Retail store" className="w-full h-full object-cover absolute inset-0" />
+              <img src="/store/retail2.jpg" alt="Retail store" className="w-full h-full object-cover absolute inset-0" />
             </motion.div>
           </motion.div>
         </div>

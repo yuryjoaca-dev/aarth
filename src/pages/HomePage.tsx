@@ -32,11 +32,11 @@ const whyUs = [
 ];
 
 const services = [
-  { title: "Kitchens", desc: "Modern designs with premium finishes to elevate your cooking and dining space.", link: "/residential/kitchens", image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=80", tall: true, wide: true },
-  { title: "Bathrooms", desc: "Luxury bathrooms with spa-like features for ultimate comfort.", link: "/residential/bathrooms", image: "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800&q=80", tall: false, wide: false },
-  { title: "Basements", desc: "Transform your basement into a functional lounge, gym, or entertainment hub.", link: "/residential/basements", image: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80", tall: false, wide: false },
-  { title: "Flooring", desc: "Durable and stylish flooring solutions for every room in your home.", link: "/residential/flooring", image: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&q=80", tall: false, wide: false },
-  { title: "Commercial", desc: "Efficient, professional projects for retail, offices, and healthcare.", link: "/projects", image: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80", tall: false, wide: true },
+  { title: "Kitchens", desc: "Modern designs with premium finishes to elevate your cooking and dining space.", link: "/residential/kitchens", image: "/homepage/kitchen.jpg", tall: true, wide: true },
+  { title: "Bathrooms", desc: "Luxury bathrooms with spa-like features for ultimate comfort.", link: "/residential/bathrooms", image: "/homepage/bathroom.jpg", tall: false, wide: false },
+  { title: "Basements", desc: "Transform your basement into a functional lounge, gym, or entertainment hub.", link: "/residential/basements", image: "/homepage/basement.jpg", tall: false, wide: false },
+  { title: "Flooring", desc: "Durable and stylish flooring solutions for every room in your home.", link: "/residential/flooring", image: "/homepage/flooring.jpg", tall: false, wide: false },
+  { title: "Commercial", desc: "Efficient, professional projects for retail, offices, and healthcare.", link: "/projects", image: "/homepage/commercial.jpg", tall: false, wide: true },
 ];
 
 const testimonials = [
@@ -62,7 +62,7 @@ export default function HomePage() {
       <section className="relative min-h-screen overflow-hidden flex items-end lg:items-center">
         <div className="absolute inset-0 z-0">
           <video autoPlay muted loop playsInline className="w-full h-full object-cover absolute inset-0">
-            <source src="/hero/hero-home.mp4" type="video/mp4" />
+            <source src="/hero/heronew.mp4" type="video/mp4" />
           </video>
           {/* Directional overlay — dark on left, fades right: editorial / cinematic */}
           <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/60 to-black/20" />
@@ -165,8 +165,8 @@ export default function HomePage() {
 
           <motion.div initial="hidden" whileInView="show" viewport={{ once: true, margin: "-60px" }} variants={stagger(0.15)} className="grid md:grid-cols-2 gap-4">
             {[
-              { src: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=800&q=80", alt: "Residential", title: "New Build & Renovations", desc: "Premium residential renovations — kitchens, bathrooms, basements and more.", href: "/projects", cta: "Residential" },
-              { src: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80", alt: "Commercial", title: "Commercial Projects", desc: "Offices, retail, healthcare — functional spaces that represent your brand.", href: "/contact", cta: "Contact Us" },
+              { src: "/homepage/noua renovations.jpg", alt: "Residential", title: "New Build & Renovations", desc: "Premium residential renovations — kitchens, bathrooms, basements and more.", href: "/projects", cta: "Residential" },
+              { src: "/homepage/commercial.jpg", alt: "Commercial", title: "Commercial Projects", desc: "Offices, retail, healthcare — functional spaces that represent your brand.", href: "/contact", cta: "Contact Us" },
             ].map((card) => (
               <motion.div key={card.title} variants={fadeUp} className="relative overflow-hidden group h-96">
                 <img src={card.src} alt={card.alt} className="w-full h-full object-cover absolute inset-0 group-hover:scale-105 transition-transform duration-700" />

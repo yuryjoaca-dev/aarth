@@ -52,13 +52,13 @@ const timeline = [
 export default function AboutPage() {
   return (
     <>
-      <SEO title="About Us" description="Learn about Aarth Construction Inc — Edmonton's trusted renovation experts. Built on passion, precision, and trust." url="/about" />
+      <SEO title="About Us" description="Learn about Aarth Construction Inc — trusted renovation experts serving Alberta, British Columbia, and Saskatchewan. Built on passion, precision, and trust." url="/about" />
 
       {/* Hero */}
       <section className="relative pt-40 pb-28 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img
-            src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1920&q=80"
+            src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=1920&q=80"
             alt="About background"
             className="w-full h-full object-cover absolute inset-0"
           />
@@ -115,10 +115,10 @@ export default function AboutPage() {
         </motion.div>
         <motion.div initial="hidden" whileInView="show" viewport={{ once: true, margin: "-80px" }} variants={stagger(0.1)} className="grid grid-cols-2 gap-3">
           {[
-            "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=400&q=80",
-            "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=400&q=80",
-            "https://images.unsplash.com/photo-1590736704728-f4730bb30770?w=400&q=80",
-            "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=400&q=80",
+            "/About/ab1.jpg",
+            "/About/ab2.jpg",
+            "/About/ab3.jpg",
+            "/About/ab4.jpg",
           ].map((src, i) => (
             <motion.div key={i} variants={fadeUp} className="relative h-44 overflow-hidden group">
               <img

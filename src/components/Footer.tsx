@@ -75,16 +75,8 @@ export default function Footer() {
 
           {/* Brand column (spans 2 cols) */}
           <div className="lg:col-span-2">
-            <Link to="/" className="inline-flex items-center gap-3 mb-6 group">
-              <div className="w-10 h-10 border border-[#C9963B] group-hover:bg-[#C9963B]/10 flex items-center justify-center transition-colors duration-200 flex-shrink-0">
-                <span className="text-[#C9963B] font-bold text-base leading-none select-none tracking-widest">A</span>
-              </div>
-              <div className="leading-tight">
-                <span className="block text-white font-bold text-xl tracking-[0.12em] uppercase">AARTH</span>
-                <span className="block text-[#C9963B] font-medium text-[9px] tracking-[0.3em] uppercase mt-0.5" style={{ fontFamily: 'Inter, sans-serif' }}>
-                  Construction Inc
-                </span>
-              </div>
+            <Link to="/" className="inline-flex items-center mb-6">
+              <img src="/logo/logo.png" alt="Aarth Construction Inc" className="h-12 w-auto object-contain brightness-0 invert" />
             </Link>
 
             <p className="text-sm leading-relaxed mb-6 text-slate-400 max-w-xs font-light" style={{ fontFamily: 'Inter, sans-serif' }}>
@@ -117,7 +109,7 @@ export default function Footer() {
               className="inline-block opacity-50 hover:opacity-90 transition-opacity duration-200"
             >
               <img
-                src="https://network.procore.com/assets/static/procore-black-badge.svg"
+                src="/procore-badge.svg"
                 alt="Verified on Procore"
                 className="h-9 w-auto brightness-0 invert"
               />

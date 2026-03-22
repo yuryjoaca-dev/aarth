@@ -57,7 +57,7 @@ const steps = [
 
 const whyUs = [
   { title: 'No hidden costs', desc: 'Our quotes are detailed and fixed. What we quote is what you pay.' },
-  { title: 'Licensed & insured', desc: 'Fully licensed in Alberta with comprehensive liability insurance and WCB coverage.' },
+  { title: 'Licensed & insured', desc: 'Fully licensed in Alberta, British Columbia, and Saskatchewan with comprehensive liability insurance and WCB coverage.' },
   { title: 'One point of contact', desc: 'You deal with us — we coordinate all trades, suppliers, and inspections.' },
   { title: 'Clean job sites', desc: 'We clean up every single day. Your home stays livable throughout the project.' },
   { title: 'On-time delivery', desc: 'We build realistic schedules and stick to them. No endless delays.' },

@@ -56,10 +56,10 @@ const stats = [
 export default function HomePage() {
   return (
     <>
-      <SEO title="Edmonton's Trusted Construction Company" description="Aarth Construction Inc offers expert kitchen, bathroom, basement, and flooring renovations in Edmonton, AB. Get your free quote today." url="/" />
+      <SEO title="Trusted Construction Company | Edmonton, Vancouver & Saskatchewan" description="Aarth Construction Inc offers expert kitchen, bathroom, basement, and flooring renovations across Alberta, British Columbia, and Saskatchewan. Get your free quote today." url="/" />
 
       {/* ── HERO ── */}
-      <section className="relative min-h-screen overflow-hidden flex items-end lg:items-center">
+      <section className="relative min-h-screen overflow-hidden flex items-end lg:items-center bg-black">
         <div className="absolute inset-0 z-0">
           <video autoPlay muted loop playsInline className="w-full h-full object-cover absolute inset-0">
             <source src="/hero/heronew.mp4" type="video/mp4" />
@@ -79,7 +79,7 @@ export default function HomePage() {
           <div className="max-w-3xl">
             <motion.div variants={fadeUp} className="flex items-center gap-4 mb-12">
               <span className="h-px w-12 bg-[#C9963B]/60" />
-              <span className="text-[#C9963B] font-medium text-xs uppercase tracking-[0.25em]" style={{ fontFamily: 'Inter, sans-serif' }}>Edmonton, Alberta</span>
+              <span className="text-[#C9963B] font-medium text-xs uppercase tracking-[0.25em]" style={{ fontFamily: 'Inter, sans-serif' }}>Alberta · BC · Saskatchewan</span>
             </motion.div>
 
             <motion.h1 variants={fadeUp} className="text-[clamp(3.5rem,8vw,7.5rem)] font-bold text-white leading-[0.88] mb-10">
@@ -89,7 +89,7 @@ export default function HomePage() {
             </motion.h1>
 
             <motion.p variants={fadeUp} className="text-slate-300/80 text-base max-w-lg leading-relaxed mb-12 font-light" style={{ fontFamily: 'Inter, sans-serif' }}>
-              Delivering quality construction with integrity across Alberta and beyond —
+              Delivering quality construction with integrity across Alberta, British Columbia, and Saskatchewan —
               residential renovations, commercial builds, and everything in between.
             </motion.p>
 

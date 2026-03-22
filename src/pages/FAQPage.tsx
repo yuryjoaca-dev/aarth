@@ -47,7 +47,7 @@ const faqSections = [
     faqs: [
       { q: "Do you offer a warranty on your work?", a: "Yes. We offer a workmanship warranty on all our projects. The warranty period varies by project type — typically 1 year for residential renovations. Manufacturer warranties on materials are passed through to you as well." },
       { q: "What does the warranty cover?", a: "Our workmanship warranty covers defects in installation — things like tiles cracking due to improper installation, cabinetry that doesn't close properly, or flooring that separates. It does not cover normal wear and tear or damage caused by misuse." },
-      { q: "Are you licensed and insured?", a: "Yes. Aarth Construction Inc is fully licensed to operate in Alberta and carries both general liability insurance and WCB (Workers' Compensation Board) coverage. We're happy to provide proof of insurance on request." },
+      { q: "Are you licensed and insured?", a: "Yes. Aarth Construction Inc is fully licensed to operate in Alberta, British Columbia, and Saskatchewan, and carries both general liability insurance and WCB (Workers' Compensation Board) coverage. We're happy to provide proof of insurance on request." },
       { q: "Do you use subcontractors?", a: "For specialized trades (electrical, plumbing, HVAC), we work with trusted, licensed subcontractors we have long-standing relationships with. Our team directly oversees all subcontracted work to maintain our quality standards." },
     ],
   },

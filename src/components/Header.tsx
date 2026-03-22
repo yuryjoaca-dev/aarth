@@ -87,14 +87,8 @@ export default function Header() {
           <div className="flex items-center justify-between h-16 lg:h-[4.5rem]">
 
             {/* Logo */}
-            <Link to="/" className="flex items-center gap-3 flex-shrink-0 group">
-              <div className="w-8 h-8 border border-[#C9963B] flex items-center justify-center flex-shrink-0 group-hover:bg-[#C9963B]/10 transition-colors duration-200">
-                <span className="text-[#C9963B] font-bold text-sm leading-none select-none tracking-widest" style={{ fontFamily: 'Inter, sans-serif' }}>A</span>
-              </div>
-              <div className="leading-tight">
-                <span className="block text-white font-bold text-base tracking-[0.15em] uppercase" style={{ fontFamily: 'Inter, sans-serif' }}>AARTH</span>
-                <span className="block text-[#C9963B]/70 font-normal text-[8px] tracking-[0.3em] uppercase -mt-0.5" style={{ fontFamily: 'Inter, sans-serif' }}>Construction Inc</span>
-              </div>
+            <Link to="/" className="flex items-center flex-shrink-0">
+              <img src="/logo/logo.png" alt="Aarth Construction Inc" className="h-[90px] w-auto object-contain" />
             </Link>
 
             {/* Desktop Nav */}

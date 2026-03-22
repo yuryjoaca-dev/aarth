@@ -27,7 +27,7 @@ export const blogPosts: BlogPost[] = [
     date: 'March 5, 2026',
     dateISO: '2026-03-05',
     readTime: '6 min read',
-    image: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1200&q=80',
+    image: '/blog/how-to-plan-a-kitchen-renovation-a-step-by-step-guide.jpg',
     featured: true,
     content: [
       { type: 'paragraph', text: 'A kitchen renovation is one of the most impactful investments you can make in your home. Done right, it transforms daily life, dramatically increases resale value, and creates a space you will actually want to spend time in. Done poorly, it creates months of stress and a result you will spend years trying to fix.' },
@@ -53,7 +53,7 @@ export const blogPosts: BlogPost[] = [
     date: 'February 18, 2026',
     dateISO: '2026-02-18',
     readTime: '4 min read',
-    image: 'https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=1200&q=80',
+    image: '/blog/5-signs-your-bathroom-needs-a-renovation-not-just-a-deep-clean.jpg',
     content: [
       { type: 'paragraph', text: 'A bathroom that needs attention does not always announce itself dramatically. More often, the signs are gradual — a persistent mustiness, grout that never looks clean no matter how hard you scrub, or a layout that makes mornings unnecessarily complicated. Here are five signals that a renovation is the right move, not another coat of paint.' },
       { type: 'heading', text: '1. Persistent Mould or Mildew Behind the Walls' },
@@ -77,7 +77,7 @@ export const blogPosts: BlogPost[] = [
     date: 'February 3, 2026',
     dateISO: '2026-02-03',
     readTime: '5 min read',
-    image: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1200&q=80',
+    image: '/blog/basement-finishing-101-what-edmonton-homeowners-need-to-know.jpg',
     content: [
       { type: 'paragraph', text: 'A finished basement can add 30% or more to your home\'s livable square footage at a fraction of the cost per square foot of an above-grade addition. In Edmonton, where long winters make indoor space especially valuable, a well-executed basement finish is one of the best investments a homeowner can make.' },
       { type: 'heading', text: 'Permits Are Non-Negotiable' },
@@ -100,7 +100,7 @@ export const blogPosts: BlogPost[] = [
     date: 'January 22, 2026',
     dateISO: '2026-01-22',
     readTime: '5 min read',
-    image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=1200&q=80',
+    image: '/blog/the-best-flooring-options-for-edmonton-homes.jpg',
     content: [
       { type: 'paragraph', text: 'Flooring in Edmonton faces challenges that homeowners in milder climates never consider: dramatic temperature swings between winter and summer, low humidity in winter that causes natural materials to contract, and high humidity in summer that causes them to expand. Choosing the wrong product leads to gapping, cupping, or delamination within a few years.' },
       { type: 'heading', text: 'Engineered Hardwood: The Best of Both Worlds' },
@@ -122,7 +122,7 @@ export const blogPosts: BlogPost[] = [
     date: 'January 9, 2026',
     dateISO: '2026-01-09',
     readTime: '6 min read',
-    image: 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=1200&q=80',
+    image: '/blog/how-to-choose-the-right-renovation-contractor-in-edmonton.jpg',
     content: [
       { type: 'paragraph', text: 'Hiring a renovation contractor is one of the largest financial decisions most homeowners make. The difference between a great contractor and a problematic one is not always obvious on the surface. Here is how to evaluate your options systematically — before you sign anything.' },
       { type: 'heading', text: 'Verify Licensing and Insurance' },
@@ -145,7 +145,7 @@ export const blogPosts: BlogPost[] = [
     date: 'December 14, 2025',
     dateISO: '2025-12-14',
     readTime: '5 min read',
-    image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?w=1200&q=80',
+    image: '/blog/office-fit-outs-in-edmonton-what-business-owners-need-to-know.jpg',
     content: [
       { type: 'paragraph', text: 'The way your office looks and functions sends a message — to your team, to your clients, and to candidates evaluating your company. A thoughtfully designed commercial space is not an overhead expense; it is an investment in productivity, culture, and brand perception.' },
       { type: 'heading', text: 'Start With a Programming Study' },

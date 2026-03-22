@@ -11,7 +11,7 @@ const stagger = {
 };
 
 const badges = [
-  { icon: BadgeCheck, title: "Licensed & Insured", sub: "Alberta, Canada" },
+  { icon: BadgeCheck, title: "Licensed & Insured", sub: "AB · BC · SK, Canada" },
   { icon: ShieldCheck, title: "WCB Covered", sub: "Worker safety protected" },
   { icon: Wrench, title: "1-Year Warranty", sub: "On all workmanship" },
   { icon: ClipboardList, title: "Free Estimates", sub: "No obligation quotes" },

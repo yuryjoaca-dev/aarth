@@ -76,7 +76,7 @@ export default function Footer() {
           {/* Brand column (spans 2 cols) */}
           <div className="lg:col-span-2">
             <Link to="/" className="inline-flex items-center mb-6">
-              <img src="/logo/logo.png" alt="Aarth Construction Inc" className="h-12 w-auto object-contain brightness-0 invert" />
+              <img src="/logo/logo.png" alt="Aarth Construction Inc" className="h-24 w-auto object-contain" />
             </Link>
 
             <p className="text-sm leading-relaxed mb-6 text-slate-400 max-w-xs font-light" style={{ fontFamily: 'Inter, sans-serif' }}>
@@ -106,12 +106,12 @@ export default function Footer() {
               href="https://network.procore.com/p/aarth-construction-inc-edmonton"
               rel="noopener noreferrer"
               target="_blank"
-              className="inline-block opacity-50 hover:opacity-90 transition-opacity duration-200"
+              className="inline-block opacity-90 hover:opacity-100 transition-opacity duration-200"
             >
               <img
                 src="/procore-badge.svg"
                 alt="Verified on Procore"
-                className="h-9 w-auto brightness-0 invert"
+                className="h-12 w-auto"
               />
             </a>
           </div>

@@ -61,7 +61,7 @@ export default function HomePage() {
       {/* ── HERO ── */}
       <section className="relative min-h-screen overflow-hidden flex items-end lg:items-center bg-black">
         <div className="absolute inset-0 z-0">
-          <video autoPlay muted loop playsInline className="w-full h-full object-cover absolute inset-0">
+          <video autoPlay muted loop playsInline className="w-full h-full object-cover absolute inset-0" style={{ pointerEvents: 'none' }}>
             <source src="/hero/heronew.mp4" type="video/mp4" />
           </video>
           {/* Directional overlay — dark on left, fades right: editorial / cinematic */}

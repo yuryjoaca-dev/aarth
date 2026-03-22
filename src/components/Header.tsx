@@ -186,11 +186,8 @@ export default function Header() {
             <motion.div key="backdrop" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.2 }} className="fixed inset-0 z-40 bg-black/70 backdrop-blur-sm lg:hidden" onClick={() => setMenuOpen(false)} />
             <motion.div key="drawer" initial={{ x: "100%" }} animate={{ x: 0 }} exit={{ x: "100%" }} transition={{ type: "spring", damping: 35, stiffness: 320 }} className="fixed top-0 right-0 bottom-0 z-50 w-80 max-w-[85vw] bg-[#080808] border-l border-white/8 shadow-2xl lg:hidden flex flex-col">
               <div className="flex items-center justify-between px-5 py-4 border-b border-white/8">
-                <Link to="/" onClick={() => setMenuOpen(false)} className="flex items-center gap-2.5">
-                  <div className="w-7 h-7 border border-[#C9963B] flex items-center justify-center flex-shrink-0">
-                    <span className="text-[#C9963B] font-bold text-xs" style={{ fontFamily: 'Inter, sans-serif' }}>A</span>
-                  </div>
-                  <span className="text-white font-bold text-sm tracking-[0.15em] uppercase" style={{ fontFamily: 'Inter, sans-serif' }}>AARTH</span>
+                <Link to="/" onClick={() => setMenuOpen(false)} className="flex items-center">
+                  <img src="/logo/logo.png" alt="Aarth Construction Inc" className="h-[60px] w-auto object-contain" />
                 </Link>
                 <button onClick={() => setMenuOpen(false)} aria-label="Close menu" className="text-white/50 hover:text-white p-1 transition-colors">
                   <X className="w-4 h-4" />

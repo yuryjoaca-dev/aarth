@@ -8,7 +8,8 @@ const MAP_STYLES = [{"featureType":"all","elementType":"labels","stylers":[{"vis
 
 declare global {
   interface Window {
-    google: typeof google
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    google: any
     initAarthMap: () => void
   }
 }

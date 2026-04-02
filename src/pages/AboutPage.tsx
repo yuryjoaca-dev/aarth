@@ -16,43 +16,43 @@ const stagger = (delay = 0.1) => ({
 const coreValues = [
   {
     icon: Zap,
-    title: "Fast & Reliable Service",
-    description: "Delivering every project on time with the quality you deserve.",
+    title: "We Respect Your Timeline",
+    description: "Renovations are disruptive enough. We plan carefully and keep things moving so you're not waiting longer than you need to.",
   },
   {
     icon: ShieldCheck,
-    title: "Workmanship Warranty",
-    description: "We stand behind our work with warranties for complete peace of mind.",
+    title: "We Back Our Work",
+    description: "Every project comes with a workmanship warranty. If something isn't right after we've left, we come back and sort it out.",
   },
   {
     icon: Users,
-    title: "Transparent Estimates",
-    description: "Clear, detailed, and fair pricing with no hidden costs.",
+    title: "No Surprise Costs",
+    description: "You'll get a detailed, itemized quote before anything starts. What's written is what you pay.",
   },
 ];
 
 const timeline = [
   {
     step: "01",
-    title: "Foundation",
-    description: "Started with a small dedicated crew and a vision for quality.",
+    title: "How We Started",
+    description: "A small crew with high standards and a straightforward goal: do good work and treat people fairly.",
   },
   {
     step: "02",
-    title: "Growth",
-    description: "Expanded our team, refined processes, and delivered larger projects.",
+    title: "How We Grew",
+    description: "Word spread. Repeat clients and referrals let us take on bigger, more complex projects across the province.",
   },
   {
     step: "03",
-    title: "Today",
-    description: "A trusted name in construction, with a team driven by excellence.",
+    title: "Where We Are Now",
+    description: "Over 400 projects in, still the same approach — honest pricing, quality work, and a team you can actually talk to.",
   },
 ];
 
 export default function AboutPage() {
   return (
     <>
-      <SEO title="About Us" description="Learn about Aarth Construction Inc — trusted renovation experts serving Alberta, British Columbia, and Saskatchewan. Built on passion, precision, and trust." url="/about" />
+      <SEO title="About Us" description="Aarth Construction Inc — a renovation company built on honest pricing, real timelines, and work we stand behind. Serving Alberta, BC, and Saskatchewan." url="/about" />
 
       {/* Hero */}
       <section className="relative pt-40 pb-28 overflow-hidden">
@@ -72,7 +72,7 @@ export default function AboutPage() {
               <span className="h-px w-12 bg-[#C9963B]/50" />
             </motion.div>
             <motion.h1 variants={fadeUp} className="text-5xl lg:text-7xl font-bold text-white mt-4 mb-6 leading-none tracking-tight">
-              Building trust, quality, and value across every project.
+              We&apos;re a construction company that does what it says it will.
             </motion.h1>
           </motion.div>
         </div>
@@ -85,23 +85,23 @@ export default function AboutPage() {
         <motion.div initial="hidden" whileInView="show" viewport={{ once: true, margin: "-80px" }} variants={stagger(0.1)}>
           <motion.p variants={fadeUp} className="text-[#C9963B] font-medium text-xs uppercase tracking-[0.2em] mb-4" style={{ fontFamily: 'Inter, sans-serif' }}>Our Story</motion.p>
           <motion.h2 variants={fadeUp} className="text-4xl font-bold tracking-tight text-slate-900 mb-6">
-            Passion. Precision. Trust.
+            We started small. We grew honestly.
           </motion.h2>
           <motion.p variants={fadeUp} className="text-slate-500 leading-relaxed mb-5 text-sm font-light" style={{ fontFamily: 'Inter, sans-serif' }}>
-            We build with passion, precision, and trust. Our company specializes
-            in residential, commercial, and renovation projects, combining modern
-            design with high-quality craftsmanship. Every project is guided by
-            attention to detail, transparency, and a commitment to exceed
-            expectations.
+            Aarth Construction started as a small crew that believed good work
+            and straight talk were enough to build a business on. It turned out
+            to be true. Most of our clients come through referrals — people who
+            had a good experience and told a friend.
           </motion.p>
           <motion.p variants={fadeUp} className="text-slate-500 leading-relaxed mb-5 text-sm font-light" style={{ fontFamily: 'Inter, sans-serif' }}>
-            With a dedicated team and years of experience, we don&apos;t just
-            construct buildings — we create lasting spaces where people live,
-            work, and grow.
+            We work across Alberta, BC, and Saskatchewan on everything from
+            kitchen and bathroom renovations to full commercial fit-outs. The
+            size of the project doesn&apos;t change how we approach it — the same
+            team, the same standards, every time.
           </motion.p>
           <motion.p variants={fadeUp} className="text-slate-500 leading-relaxed mb-8 text-sm font-light" style={{ fontFamily: 'Inter, sans-serif' }}>
-            Our mission is simple: provide transparent estimates, quality
-            workmanship, and long-lasting value for every client we serve.
+            You&apos;ll get a clear quote upfront, a realistic timeline, and a crew
+            that actually shows up when they say they will.
           </motion.p>
           <motion.div variants={fadeUp}>
             <Link
@@ -138,9 +138,8 @@ export default function AboutPage() {
             <motion.p variants={fadeUp} className="text-[#C9963B] font-medium text-xs uppercase tracking-[0.2em] mb-4" style={{ fontFamily: 'Inter, sans-serif' }}>Our Journey</motion.p>
             <motion.h2 variants={fadeUp} className="text-4xl font-bold tracking-tight text-white mb-5">Our Team</motion.h2>
             <motion.p variants={fadeUp} className="text-slate-400 max-w-2xl mx-auto mb-16 leading-relaxed text-sm font-light" style={{ fontFamily: 'Inter, sans-serif' }}>
-              More than just builders — we are innovators, collaborators, and
-              problem-solvers. Our journey reflects a passion for craftsmanship,
-              continuous growth, and delivering excellence in every project.
+              We&apos;re a team of tradespeople, project managers, and designers who
+              take real pride in the work we put our name on. Here&apos;s how we got here.
             </motion.p>
             <div className="grid md:grid-cols-3 gap-6">
               {timeline.map((item) => (
@@ -193,7 +192,7 @@ export default function AboutPage() {
             <span className="h-px w-12 bg-[#C9963B]/50" />
           </motion.div>
           <motion.h2 variants={fadeUp} className="text-4xl md:text-5xl font-bold tracking-tight mb-6">Ready to start your project?</motion.h2>
-          <motion.p variants={fadeUp} className="mb-12 text-slate-400 leading-relaxed font-light" style={{ fontFamily: 'Inter, sans-serif' }}>Let&apos;s build something extraordinary together.</motion.p>
+          <motion.p variants={fadeUp} className="mb-12 text-slate-400 leading-relaxed font-light" style={{ fontFamily: 'Inter, sans-serif' }}>Tell us about your project — we&apos;ll get back to you with a clear, honest quote.</motion.p>
           <motion.div variants={fadeUp}>
             <Link
               to="/contact"

@@ -16,27 +16,27 @@ const stagger = (delayChildren = 0.12) => ({
 const whyUs = [
   {
     icon: Zap,
-    title: "Fast & Reliable",
-    description: "High-quality construction delivered with unmatched speed and precision — your project completed on time, every time.",
+    title: "We Show Up on Time",
+    description: "Deadlines matter to us as much as they matter to you. We keep your project moving and let you know if anything changes.",
   },
   {
     icon: CheckCircle,
-    title: "Full Transparency",
-    description: "Honest communication, accurate estimates, and real-time updates. No hidden costs, no surprises — ever.",
+    title: "No Hidden Costs",
+    description: "You get a clear, itemized estimate before we start. What we quote is what you pay — no line items appearing out of nowhere.",
   },
   {
     icon: Shield,
-    title: "Guaranteed Craftsmanship",
-    description: "Premium builds backed by a workmanship warranty. Every joint, finish, and detail receives our full attention.",
+    title: "Work We Stand Behind",
+    description: "We back everything we build with a workmanship warranty. If something isn't right, we come back and fix it.",
   },
 ];
 
 const services = [
-  { title: "Kitchens", desc: "Modern designs with premium finishes to elevate your cooking and dining space.", link: "/residential/kitchens", image: "/homepage/kitchen.jpg", tall: true, wide: true },
-  { title: "Bathrooms", desc: "Luxury bathrooms with spa-like features for ultimate comfort.", link: "/residential/bathrooms", image: "/homepage/bathroom.jpg", tall: false, wide: false },
-  { title: "Basements", desc: "Transform your basement into a functional lounge, gym, or entertainment hub.", link: "/residential/basements", image: "/homepage/basement.jpg", tall: false, wide: false },
-  { title: "Flooring", desc: "Durable and stylish flooring solutions for every room in your home.", link: "/residential/flooring", image: "/homepage/flooring.jpg", tall: false, wide: false },
-  { title: "Commercial", desc: "Efficient, professional projects for retail, offices, and healthcare.", link: "/projects", image: "/homepage/commercial.jpg", tall: false, wide: true },
+  { title: "Kitchens", desc: "Kitchens built for real life — great workflow, lasting materials, and a look you'll love for years.", link: "/residential/kitchens", image: "/homepage/kitchen.jpg", tall: true, wide: true },
+  { title: "Bathrooms", desc: "From a clean refresh to a full gut reno — bathrooms that feel great to start and end your day in.", link: "/residential/bathrooms", image: "/homepage/bathroom.jpg", tall: false, wide: false },
+  { title: "Basements", desc: "Turn that unused square footage into a space the whole family actually uses.", link: "/residential/basements", image: "/homepage/basement.jpg", tall: false, wide: false },
+  { title: "Flooring", desc: "Hardwood, tile, vinyl — installed right so it stays looking good for decades.", link: "/residential/flooring", image: "/homepage/flooring.jpg", tall: false, wide: false },
+  { title: "Commercial", desc: "Offices, clinics, and retail spaces built on schedule and ready for business.", link: "/projects", image: "/homepage/commercial.jpg", tall: false, wide: true },
 ];
 
 const testimonials = [
@@ -89,8 +89,8 @@ export default function HomePage() {
             </motion.h1>
 
             <motion.p variants={fadeUp} className="text-slate-300/80 text-base max-w-lg leading-relaxed mb-12 font-light" style={{ fontFamily: 'Inter, sans-serif' }}>
-              Delivering quality construction with integrity across Alberta, British Columbia, and Saskatchewan —
-              residential renovations, commercial builds, and everything in between.
+              We renovate kitchens, bathrooms, basements, and more — across Alberta, BC, and Saskatchewan.
+              Honest pricing, real timelines, and work you'll be proud to show off.
             </motion.p>
 
             <motion.div variants={fadeUp} className="flex flex-col sm:flex-row gap-3">
@@ -165,8 +165,8 @@ export default function HomePage() {
 
           <motion.div initial="hidden" whileInView="show" viewport={{ once: true, margin: "-60px" }} variants={stagger(0.15)} className="grid md:grid-cols-2 gap-4">
             {[
-              { src: "/homepage/noua renovations.jpg", alt: "Residential", title: "New Build & Renovations", desc: "Premium residential renovations — kitchens, bathrooms, basements and more.", href: "/projects", cta: "Residential" },
-              { src: "/homepage/commercial.jpg", alt: "Commercial", title: "Commercial Projects", desc: "Offices, retail, healthcare — functional spaces that represent your brand.", href: "/contact", cta: "Contact Us" },
+              { src: "/homepage/noua renovations.jpg", alt: "Residential", title: "Residential Renovations", desc: "Kitchens, bathrooms, basements, and more — done right, the first time.", href: "/projects", cta: "See Our Work" },
+              { src: "/homepage/commercial.jpg", alt: "Commercial", title: "Commercial Projects", desc: "Offices, retail, clinics — spaces that work hard and look professional.", href: "/contact", cta: "Talk to Us" },
             ].map((card) => (
               <motion.div key={card.title} variants={fadeUp} className="relative overflow-hidden group h-96">
                 <img src={card.src} alt={card.alt} className="w-full h-full object-cover absolute inset-0 group-hover:scale-105 transition-transform duration-700" />
@@ -253,7 +253,7 @@ export default function HomePage() {
             Ready to start your project?
           </motion.h2>
           <motion.p variants={fadeUp} className="text-slate-400 mb-12 leading-relaxed font-light" style={{ fontFamily: 'Inter, sans-serif' }}>
-            Let&apos;s build something extraordinary together. Contact us for a free, no-obligation quote.
+            Tell us what you have in mind — we&apos;ll get back to you quickly with a free, no-obligation quote.
           </motion.p>
           <motion.div variants={fadeUp}>
             <Link to="/contact" className="inline-flex items-center gap-2 border border-[#C9963B] text-[#C9963B] hover:bg-[#C9963B] hover:text-white font-medium px-10 py-4 text-xs uppercase tracking-widest transition-all duration-300" style={{ fontFamily: 'Inter, sans-serif' }}>

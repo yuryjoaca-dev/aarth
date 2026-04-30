@@ -22,6 +22,8 @@ export default function ContactPage() {
     message: "",
   });
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState("");
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
@@ -29,9 +31,26 @@ export default function ContactPage() {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setSubmitted(true);
+    setLoading(true);
+    setError("");
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+      if (res.ok) {
+        setSubmitted(true);
+      } else {
+        setError("Something went wrong. Please try again or call us directly.");
+      }
+    } catch {
+      setError("Something went wrong. Please try again or call us directly.");
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -186,12 +205,16 @@ export default function ContactPage() {
               className="w-full border border-stone-200 px-4 py-3.5 text-sm focus:outline-none focus:border-[#111111] bg-stone-50 placeholder-slate-400 resize-none transition-all"
               style={{ fontFamily: 'Inter, sans-serif' }}
             />
+            {error && (
+              <p className="text-red-500 text-xs" style={{ fontFamily: 'Inter, sans-serif' }}>{error}</p>
+            )}
             <button
               type="submit"
-              className="w-full bg-[#C9963B] hover:bg-[#A67A2E] text-white font-medium px-6 py-4 transition-all duration-200 uppercase tracking-widest text-xs"
+              disabled={loading}
+              className="w-full bg-[#C9963B] hover:bg-[#A67A2E] disabled:opacity-60 text-white font-medium px-6 py-4 transition-all duration-200 uppercase tracking-widest text-xs"
               style={{ fontFamily: 'Inter, sans-serif' }}
             >
-              Submit Request
+              {loading ? "Sending..." : "Submit Request"}
             </button>
           </motion.form>
         )}

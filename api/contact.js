@@ -1,4 +1,4 @@
-import nodemailer from "nodemailer";
+const nodemailer = require("nodemailer");
 
 function escape(str) {
   return String(str ?? "")
@@ -7,7 +7,7 @@ function escape(str) {
     .replace(/>/g, "&gt;");
 }
 
-export default async function handler(req, res) {
+module.exports = async function handler(req, res) {
   if (req.method !== "POST") {
     return res.status(405).json({ error: "Method not allowed" });
   }

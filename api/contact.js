@@ -1,4 +1,4 @@
-const nodemailer = require("nodemailer");
+const { Resend } = require("resend");
 
 function escape(str) {
   return String(str ?? "")
@@ -18,19 +18,11 @@ module.exports = async function handler(req, res) {
     return res.status(400).json({ error: "Missing required fields" });
   }
 
-  const transporter = nodemailer.createTransport({
-    host: "smtp.titan.email",
-    port: 587,
-    secure: false,
-    auth: {
-      user: process.env.TITAN_EMAIL,
-      pass: process.env.TITAN_PASSWORD,
-    },
-  });
+  const resend = new Resend(process.env.RESEND_API_KEY);
 
   try {
-    await transporter.sendMail({
-      from: `"Aarth Construction Website" <${process.env.TITAN_EMAIL}>`,
+    await resend.emails.send({
+      from: "Aarth Construction <yury@aarthconstruction.com>",
       to: process.env.TO_EMAIL,
       replyTo: email,
       subject: `New Quote Request – ${escape(projectType)} from ${escape(name)}`,
@@ -55,4 +47,4 @@ module.exports = async function handler(req, res) {
     console.error("Email error:", err.message);
     res.status(500).json({ error: err.message });
   }
-}
+};

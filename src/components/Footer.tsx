@@ -76,7 +76,7 @@ export default function Footer() {
           {/* Brand column (spans 2 cols) */}
           <div className="lg:col-span-2">
             <Link to="/" className="inline-flex items-center mb-6">
-              <img src="/logo/logo.png" alt="Aarth Construction Inc" className="h-24 w-auto object-contain" />
+              <img src="/logo/logo.webp" alt="Aarth Construction Inc" className="h-24 w-auto object-contain" />
             </Link>
 
             <p className="text-sm leading-relaxed mb-6 text-slate-400 max-w-xs font-light" style={{ fontFamily: 'Inter, sans-serif' }}>

@@ -88,7 +88,7 @@ export default function Header() {
 
             {/* Logo */}
             <Link to="/" className="flex items-center flex-shrink-0">
-              <img src="/logo/logo.png" alt="Aarth Construction Inc" className="h-[90px] w-auto object-contain" />
+              <img src="/logo/logo.webp" alt="Aarth Construction Inc" className="h-[90px] w-auto object-contain" />
             </Link>
 
             {/* Desktop Nav */}
@@ -187,7 +187,7 @@ export default function Header() {
             <motion.div key="drawer" initial={{ x: "100%" }} animate={{ x: 0 }} exit={{ x: "100%" }} transition={{ type: "spring", damping: 35, stiffness: 320 }} className="fixed top-0 right-0 bottom-0 z-50 w-80 max-w-[85vw] bg-[#080808] border-l border-white/8 shadow-2xl lg:hidden flex flex-col">
               <div className="flex items-center justify-between px-5 py-4 border-b border-white/8">
                 <Link to="/" onClick={() => setMenuOpen(false)} className="flex items-center">
-                  <img src="/logo/logo.png" alt="Aarth Construction Inc" className="h-[60px] w-auto object-contain" />
+                  <img src="/logo/logo.webp" alt="Aarth Construction Inc" className="h-[60px] w-auto object-contain" />
                 </Link>
                 <button onClick={() => setMenuOpen(false)} aria-label="Close menu" className="text-white/50 hover:text-white p-1 transition-colors">
                   <X className="w-4 h-4" />

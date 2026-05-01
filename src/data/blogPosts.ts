@@ -308,7 +308,7 @@ export const blogPosts: BlogPost[] = [
     date: 'August 5, 2025',
     dateISO: '2025-08-05',
     readTime: '4 min read',
-    image: '/blog/page3/interior-painting-professional-finish.png',
+    image: '/blog/page3/interior-painting-professional-finish.webp',
     content: [
       { type: 'paragraph', text: 'Paint is the most visible finish in any room. It is also the most frequently done wrong — not because the application is difficult, but because proper preparation is time-consuming and easy to skip. Here is what a professional interior paint job actually involves.' },
       { type: 'heading', text: 'Preparation Is 80% of the Job' },
@@ -328,7 +328,7 @@ export const blogPosts: BlogPost[] = [
     date: 'July 18, 2025',
     dateISO: '2025-07-18',
     readTime: '5 min read',
-    image: '/blog/page3/when-to-replace-windows-edmonton.png',
+    image: '/blog/page3/when-to-replace-windows-edmonton.webp',
     content: [
       { type: 'paragraph', text: 'In Edmonton\'s climate, windows are a critical component of home performance — not just aesthetics. A single-pane window or failed IGU (insulated glass unit) can account for significant heat loss, elevated utility bills, and condensation problems that damage surrounding finishes. Here is how to know when replacement makes sense.' },
       { type: 'heading', text: 'Clear Signs It Is Time to Replace' },
@@ -348,7 +348,7 @@ export const blogPosts: BlogPost[] = [
     date: 'July 2, 2025',
     dateISO: '2025-07-02',
     readTime: '5 min read',
-    image: '/blog/page3/insulation-upgrades-that-save-money-edmonton.png',
+    image: '/blog/page3/insulation-upgrades-that-save-money-edmonton.webp',
     content: [
       { type: 'paragraph', text: 'Edmonton sits in ASHRAE Climate Zone 7 — one of the most demanding climates in North America for residential energy performance. A well-insulated home here is not a luxury or a "green" initiative; it is a fundamental requirement for comfort and reasonable heating bills. Here is where insulation upgrades deliver the most return.' },
       { type: 'heading', text: 'Attic Insulation: The Highest ROI Upgrade' },
@@ -367,7 +367,7 @@ export const blogPosts: BlogPost[] = [
     date: 'June 15, 2025',
     dateISO: '2025-06-15',
     readTime: '5 min read',
-    image: '/blog/page3/converting-attached-garage-edmonton.png',
+    image: '/blog/page3/converting-attached-garage-edmonton.webp',
     content: [
       { type: 'paragraph', text: 'An attached garage conversion is one of the more efficient ways to add living space — the structure already exists, the walls are already framed, and the roof is already there. But there are real constraints to know before you start planning what to put in that space.' },
       { type: 'heading', text: 'Zoning First' },
@@ -387,7 +387,7 @@ export const blogPosts: BlogPost[] = [
     date: 'May 28, 2025',
     dateISO: '2025-05-28',
     readTime: '5 min read',
-    image: '/blog/page3/retail-fit-out-commercial-space-design.png',
+    image: '/blog/page3/retail-fit-out-commercial-space-design.webp',
     content: [
       { type: 'paragraph', text: 'Retail design has a measurable impact on commercial performance. Studies consistently show that lighting, traffic flow, and display positioning directly influence dwell time — and dwell time correlates with purchase rates. A well-designed retail fit-out is not cosmetic; it is infrastructure for your business model.' },
       { type: 'heading', text: 'The Decompression Zone' },
@@ -407,7 +407,7 @@ export const blogPosts: BlogPost[] = [
     date: 'May 12, 2025',
     dateISO: '2025-05-12',
     readTime: '5 min read',
-    image: '/blog/page3/master-ensuite-most-requested-renovation-2026.png',
+    image: '/blog/page3/master-ensuite-most-requested-renovation-2026.webp',
     content: [
       { type: 'paragraph', text: 'The master ensuite renovation has displaced kitchen renovations as the most requested project in our books for 2025–2026. Homeowners who spent significant time at home during recent years developed a clear picture of what they wanted from their private spaces — and a cramped, dated ensuite no longer cuts it.' },
       { type: 'heading', text: 'What Homeowners Are Actually Asking For' },
@@ -427,7 +427,7 @@ export const blogPosts: BlogPost[] = [
     date: 'April 24, 2025',
     dateISO: '2025-04-24',
     readTime: '4 min read',
-    image: '/blog/page4/kitchen-islands-design-costs-what-works.png',
+    image: '/blog/page4/kitchen-islands-design-costs-what-works.webp',
     content: [
       { type: 'paragraph', text: 'The kitchen island is the most requested single element in kitchen renovation projects. It is also the most frequently sized incorrectly. An island that is too large for the kitchen creates a circulation problem that makes cooking and cleanup worse than before. Getting the dimensions and function right is the whole game.' },
       { type: 'heading', text: 'The Clearance Rule' },
@@ -447,7 +447,7 @@ export const blogPosts: BlogPost[] = [
     date: 'April 7, 2025',
     dateISO: '2025-04-07',
     readTime: '6 min read',
-    image: '/blog/page4/home-addition-planning-edmonton.png',
+    image: '/blog/page4/home-addition-planning-edmonton.webp',
     content: [
       { type: 'paragraph', text: 'A home addition — whether it is a main floor extension, a second storey, or a garage suite — is among the most complex renovation types. It involves structural engineering, significant permitting, and the full spectrum of trades. But done well, it can transform a home that no longer fits your life into one that works perfectly for the next 20 years.' },
       { type: 'heading', text: 'Feasibility Comes First' },
@@ -467,7 +467,7 @@ export const blogPosts: BlogPost[] = [
     date: 'March 20, 2025',
     dateISO: '2025-03-20',
     readTime: '7 min read',
-    image: '/blog/page4/mudroom-design-edmonton-homes.png',
+    image: '/blog/page4/mudroom-design-edmonton-homes.webp',
     content: [
       { type: 'paragraph', text: 'No room in an Edmonton home does more daily work than the mudroom — and no room is more often treated as an afterthought. It is the transition zone between the outside world and your living space, and in a climate where wet boots, snow-caked jackets, and winter sports gear are a daily reality eight months of the year, getting this space right has a direct impact on how the rest of your home holds up.' },
       { type: 'paragraph', text: 'A poorly designed mudroom — or no mudroom at all — means all that moisture, grit, and bulk migrates directly into your main living areas. Hardwood floors get damaged. Closets get overwhelmed. Dirt accumulates in corners that are impossible to clean. A well-designed mudroom contains the problem at the source, which is exactly what it is supposed to do.' },
@@ -492,7 +492,7 @@ export const blogPosts: BlogPost[] = [
     date: 'March 3, 2025',
     dateISO: '2025-03-03',
     readTime: '8 min read',
-    image: '/blog/page4/open-concept-renovation-load-bearing-walls.png',
+    image: '/blog/page4/open-concept-renovation-load-bearing-walls.webp',
     content: [
       { type: 'paragraph', text: 'The open concept main floor has been the dominant request in residential renovation for the better part of a decade — and for good reason. Removing the wall between a kitchen and living area dramatically changes how a home feels, improves sight lines, and allows for much better natural light distribution. But there is a lot of misinformation about what it actually involves, and the gap between "just knock that wall out" and the reality can be significant.' },
       { type: 'heading', text: 'Is the Wall Load Bearing? This Is the Only Question That Matters First.' },
@@ -520,7 +520,7 @@ export const blogPosts: BlogPost[] = [
     date: 'February 12, 2025',
     dateISO: '2025-02-12',
     readTime: '7 min read',
-    image: '/blog/page4/home-office-renovation-design-guide.png',
+    image: '/blog/page4/home-office-renovation-design-guide.webp',
     content: [
       { type: 'paragraph', text: 'The shift to hybrid and remote work has made the home office one of the most requested renovation projects — and also one of the most poorly executed. A dedicated desk shoved in a bedroom corner or a dining table commandeered for work calls is not a home office. It is a compromise that affects your productivity, your professionalism on video calls, and eventually your ability to mentally separate work from home life. Getting a proper home office right is worth the investment.' },
       { type: 'heading', text: 'Location Strategy: Where Your Office Goes Matters' },
@@ -547,7 +547,7 @@ export const blogPosts: BlogPost[] = [
     date: 'January 27, 2025',
     dateISO: '2025-01-27',
     readTime: '6 min read',
-    image: '/blog/page4/laundry-room-renovation-guide.png',
+    image: '/blog/page4/laundry-room-renovation-guide.webp',
     content: [
       { type: 'paragraph', text: 'The laundry room is one of the most frequently used spaces in any home and one of the least thoughtfully designed. It is almost always planned as an afterthought — the leftover space at the end of a basement build or tucked into a closet on the main floor. The result is a room that is cramped, poorly lit, and unable to support the volume of laundry that a real household generates. A well-executed laundry room renovation fixes all of this at a cost that is far lower than most homeowners expect.' },
       { type: 'heading', text: 'The Layout Question: Side-by-Side vs. Stacked' },
@@ -574,7 +574,7 @@ export const blogPosts: BlogPost[] = [
     date: 'January 11, 2025',
     dateISO: '2025-01-11',
     readTime: '8 min read',
-    image: '/blog/page5/custom-millwork-built-ins-edmonton.png',
+    image: '/blog/page5/custom-millwork-built-ins-edmonton.webp',
     content: [
       { type: 'paragraph', text: 'Custom millwork — built-in cabinetry, bookcases, entertainment centres, window seats, wainscoting, coffered ceilings — occupies a unique position in renovation. It is not furniture: it is permanent architecture that becomes part of the house. When designed and built well, it elevates a space in a way that no amount of furniture or paint can replicate. When designed poorly or executed cheaply, it is impossible to ignore and expensive to redo.' },
       { type: 'heading', text: 'What Distinguishes Custom Millwork From Stock Cabinetry' },
@@ -600,7 +600,7 @@ export const blogPosts: BlogPost[] = [
     date: 'December 20, 2024',
     dateISO: '2024-12-20',
     readTime: '8 min read',
-    image: '/blog/page5/aging-in-place-renovation-edmonton.png',
+    image: '/blog/page5/aging-in-place-renovation-edmonton.webp',
     content: [
       { type: 'paragraph', text: 'The phrase "aging in place" implies a specific demographic, but the principles behind it — designing spaces that work for people of varying mobility, strength, and cognitive capacity — apply to virtually every home renovation decision. A bathroom designed with universal accessibility principles is simply a better-designed bathroom. A kitchen layout that works for someone with arthritis also works better for someone who is carrying groceries in both arms. Good design is inclusive design.' },
       { type: 'heading', text: 'What Aging-in-Place Design Actually Looks Like' },
@@ -627,7 +627,7 @@ export const blogPosts: BlogPost[] = [
     date: 'December 4, 2024',
     dateISO: '2024-12-04',
     readTime: '8 min read',
-    image: '/blog/page5/heritage-home-renovation-challenges-edmonton.png',
+    image: '/blog/page5/heritage-home-renovation-challenges-edmonton.webp',
     content: [
       { type: 'paragraph', text: 'Edmonton has a significant stock of homes built between the 1910s and 1950s — houses with genuine character, solid bones, and architectural details that were standard in their era and impossible to replicate affordably today. Hardwood floors through the entire home, plaster walls with superior acoustic properties, solid wood doors and trim, real tile and stonework, and proportions that feel human rather than maximized for floor plate efficiency.' },
       { type: 'paragraph', text: 'These homes are also, almost without exception, carrying decades of deferred maintenance, undocumented modifications, outdated mechanical systems, and building materials that range from inconvenient to genuinely hazardous. Renovating them successfully requires understanding both what is worth preserving and what must be replaced — and having the experience to tell the difference.' },
@@ -653,7 +653,7 @@ export const blogPosts: BlogPost[] = [
     date: 'November 18, 2024',
     dateISO: '2024-11-18',
     readTime: '7 min read',
-    image: '/blog/page5/outdoor-kitchen-design-costs-edmonton.png',
+    image: '/blog/page5/outdoor-kitchen-design-costs-edmonton.webp',
     content: [
       { type: 'paragraph', text: 'Edmonton\'s summer season is compressed — roughly May through September for comfortable outdoor living — but that does not diminish the value of a well-designed outdoor kitchen. It concentrates your enjoyment. A space designed for outdoor cooking and entertaining becomes the centre of gravity for summer socializing, and the short season means it stays a novelty rather than becoming routine. Done properly, it also adds meaningful value to your property.' },
       { type: 'heading', text: 'Edmonton-Specific Design Challenges' },
@@ -678,7 +678,7 @@ export const blogPosts: BlogPost[] = [
     date: 'November 2, 2024',
     dateISO: '2024-11-02',
     readTime: '7 min read',
-    image: '/blog/page5/renovation-financing-options-edmonton.png',
+    image: '/blog/page5/renovation-financing-options-edmonton.webp',
     content: [
       { type: 'paragraph', text: 'One of the most common questions we hear from homeowners is not about what to renovate or how — it is how to pay for it. Renovation financing is genuinely complex, and the right structure depends on factors that vary significantly from homeowner to homeowner: how much equity you have, your existing mortgage terms, your credit profile, the size of the project, and whether the renovation adds value that affects your property\'s appraisal.' },
       { type: 'heading', text: 'Option 1: Home Equity Line of Credit (HELOC)' },
@@ -705,7 +705,7 @@ export const blogPosts: BlogPost[] = [
     date: 'October 15, 2024',
     dateISO: '2024-10-15',
     readTime: '7 min read',
-    image: '/blog/page5/spa-bathroom-design-trends-edmonton.png',
+    image: '/blog/page5/spa-bathroom-design-trends-edmonton.webp',
     content: [
       { type: 'paragraph', text: 'The term "spa bathroom" gets used loosely in renovation circles — sometimes to describe a bathroom with a soaker tub, sometimes to justify a six-figure renovation budget. But the principles behind the spa bathroom aesthetic are actually well-defined, and most of them are more accessible than the Instagram version suggests. The essence is: natural materials, layered lighting, thermal comfort, and a layout that prioritizes the experience of being in the room over the functionality of getting ready quickly.' },
       { type: 'heading', text: 'Material Palette: What Reads as Spa' },
@@ -730,7 +730,7 @@ export const blogPosts: BlogPost[] = [
     date: 'September 30, 2024',
     dateISO: '2024-09-30',
     readTime: '8 min read',
-    image: '/blog/page6/restaurant-food-service-fit-out-edmonton.png',
+    image: '/blog/page6/restaurant-food-service-fit-out-edmonton.webp',
     content: [
       { type: 'paragraph', text: 'A restaurant or food service fit-out is among the most complex commercial construction projects available. It combines the mechanical demands of a commercial kitchen — exhaust systems, gas lines, fire suppression, grease management — with the customer-facing design requirements of a retail environment, all under the scrutiny of Alberta Health Services and Edmonton\'s Development and Building Approvals process. Getting any component wrong causes expensive rework, delayed opening, or failed inspections.' },
       { type: 'heading', text: 'The Approvals Gauntlet' },
@@ -755,7 +755,7 @@ export const blogPosts: BlogPost[] = [
     date: 'September 13, 2024',
     dateISO: '2024-09-13',
     readTime: '9 min read',
-    image: '/blog/page6/renovation-mistakes-to-avoid-edmonton.png',
+    image: '/blog/page6/renovation-mistakes-to-avoid-edmonton.webp',
     content: [
       { type: 'paragraph', text: 'The renovation industry is full of stories that end with "...and then it cost twice as much and took twice as long." These outcomes are rarely random. The same decisions — made for understandable reasons by well-intentioned homeowners — produce the same problems, project after project. Here is an honest look at the most common mistakes and the specific actions that prevent them.' },
       { type: 'heading', text: 'Mistake 1: Choosing the Lowest Bid' },
@@ -786,7 +786,7 @@ export const blogPosts: BlogPost[] = [
     date: 'August 28, 2024',
     dateISO: '2024-08-28',
     readTime: '6 min read',
-    image: '/blog/page6/heated-driveway-snowmelt-systems-edmonton.png',
+    image: '/blog/page6/heated-driveway-snowmelt-systems-edmonton.webp',
     content: [
       { type: 'paragraph', text: 'Edmonton averages approximately 130 centimetres of snowfall per year — and that number does not account for the freeze-thaw cycles, ice accumulation, and blowing snow that make driveway management one of the more time-consuming aspects of winter homeownership. A heated driveway or snowmelt system does not just eliminate shovelling; it eliminates ice, prevents slip hazards, and protects the driveway surface itself from the freeze-thaw damage that causes cracking and potholing over time.' },
       { type: 'heading', text: 'How Snowmelt Systems Work' },
@@ -811,7 +811,7 @@ export const blogPosts: BlogPost[] = [
     date: 'August 10, 2024',
     dateISO: '2024-08-10',
     readTime: '7 min read',
-    image: '/blog/page6/smart-home-technology-renovation-integration.png',
+    image: '/blog/page6/smart-home-technology-renovation-integration.webp',
     content: [
       { type: 'paragraph', text: 'Smart home technology is one of the few renovation categories where spending money at the wrong stage — after walls are closed — costs dramatically more than spending it at the right stage. Running conduit, pulling wire, and installing low-voltage rough-in boxes during a renovation is inexpensive. Doing it after drywall is in place requires cutting, patching, repainting, and sometimes floor removal. The renovation phase is when smart home infrastructure should be planned and installed — even if the actual devices are added later.' },
       { type: 'heading', text: 'Infrastructure vs. Devices: The Critical Distinction' },
@@ -836,7 +836,7 @@ export const blogPosts: BlogPost[] = [
     date: 'July 24, 2024',
     dateISO: '2024-07-24',
     readTime: '8 min read',
-    image: '/blog/page6/commercial-medical-dental-fit-out-edmonton.png',
+    image: '/blog/page6/commercial-medical-dental-fit-out-edmonton.webp',
     content: [
       { type: 'paragraph', text: 'Medical and dental clinic fit-outs operate in a category of their own within commercial construction. The regulatory environment is more complex, the mechanical requirements are more specialized, and the consequences of design or construction errors are more significant — in terms of both patient safety and regulatory compliance — than in almost any other commercial application. For practitioners establishing or expanding a clinic in Edmonton, understanding the full scope of what a fit-out involves before engaging a contractor prevents costly surprises.' },
       { type: 'heading', text: 'The Approvals Landscape' },

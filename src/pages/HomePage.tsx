@@ -32,10 +32,10 @@ const whyUs = [
 ];
 
 const services = [
-  { title: "Kitchens", desc: "Kitchens built for real life — great workflow, lasting materials, and a look you'll love for years.", link: "/residential/kitchens", image: "/homepage/kitchen.jpg", tall: true, wide: true },
-  { title: "Bathrooms", desc: "From a clean refresh to a full gut reno — bathrooms that feel great to start and end your day in.", link: "/residential/bathrooms", image: "/homepage/bathroom.jpg", tall: false, wide: false },
-  { title: "Basements", desc: "Turn that unused square footage into a space the whole family actually uses.", link: "/residential/basements", image: "/homepage/basement.jpg", tall: false, wide: false },
-  { title: "Flooring", desc: "Hardwood, tile, vinyl — installed right so it stays looking good for decades.", link: "/residential/flooring", image: "/homepage/flooring.jpg", tall: false, wide: false },
+  { title: "Kitchens", desc: "Kitchens built for real life — great workflow, lasting materials, and a look you'll love for years.", link: "/residential/kitchens", image: "/homepage/kitchen.webp", tall: true, wide: true },
+  { title: "Bathrooms", desc: "From a clean refresh to a full gut reno — bathrooms that feel great to start and end your day in.", link: "/residential/bathrooms", image: "/homepage/bathroom.webp", tall: false, wide: false },
+  { title: "Basements", desc: "Turn that unused square footage into a space the whole family actually uses.", link: "/residential/basements", image: "/homepage/basement.webp", tall: false, wide: false },
+  { title: "Flooring", desc: "Hardwood, tile, vinyl — installed right so it stays looking good for decades.", link: "/residential/flooring", image: "/homepage/flooring.webp", tall: false, wide: false },
   { title: "Commercial", desc: "Offices, clinics, and retail spaces built on schedule and ready for business.", link: "/projects", image: "/homepage/commercial.jpg", tall: false, wide: true },
 ];
 
@@ -165,7 +165,7 @@ export default function HomePage() {
 
           <motion.div initial="hidden" whileInView="show" viewport={{ once: true, margin: "-60px" }} variants={stagger(0.15)} className="grid md:grid-cols-2 gap-4">
             {[
-              { src: "/homepage/noua renovations.jpg", alt: "Residential", title: "Residential Renovations", desc: "Kitchens, bathrooms, basements, and more — done right, the first time.", href: "/projects", cta: "See Our Work" },
+              { src: "/homepage/noua renovations.webp", alt: "Residential", title: "Residential Renovations", desc: "Kitchens, bathrooms, basements, and more — done right, the first time.", href: "/projects", cta: "See Our Work" },
               { src: "/homepage/commercial.jpg", alt: "Commercial", title: "Commercial Projects", desc: "Offices, retail, clinics — spaces that work hard and look professional.", href: "/contact", cta: "Talk to Us" },
             ].map((card) => (
               <motion.div key={card.title} variants={fadeUp} className="relative overflow-hidden group h-96">

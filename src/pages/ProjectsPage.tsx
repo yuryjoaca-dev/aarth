@@ -134,10 +134,10 @@ export default function ProjectsPage() {
       {/* 4-Category Expanding Columns */}
       <section className="flex flex-col h-[1100px] lg:flex-row lg:h-[80vh]">
         {[
-          { title: "Kitchens", image: "/homepage/kitchen.jpg", link: "/residential/kitchens" },
-          { title: "Basements", image: "/homepage/basement.jpg", link: "/residential/basements" },
-          { title: "Flooring", image: "/homepage/flooring.jpg", link: "/residential/flooring" },
-          { title: "Bathrooms", image: "/homepage/bathroom.jpg", link: "/residential/bathrooms" },
+          { title: "Kitchens", image: "/homepage/kitchen.webp", link: "/residential/kitchens" },
+          { title: "Basements", image: "/homepage/basement.webp", link: "/residential/basements" },
+          { title: "Flooring", image: "/homepage/flooring.webp", link: "/residential/flooring" },
+          { title: "Bathrooms", image: "/homepage/bathroom.webp", link: "/residential/bathrooms" },
         ].map((item, i) => (
           <div
             key={item.title}

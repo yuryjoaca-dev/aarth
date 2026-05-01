@@ -1,6 +1,7 @@
 import { Routes, Route } from 'react-router-dom'
 import Layout from './components/Layout'
 import WhatsAppButton from './components/WhatsAppButton'
+import LandingPage from './pages/LandingPage'
 import HomePage from './pages/HomePage'
 import AboutPage from './pages/AboutPage'
 import ServicesPage from './pages/ServicesPage'
@@ -27,6 +28,7 @@ export default function App() {
   return (
     <>
       <Routes>
+        <Route path="/renovations-edmonton" element={<LandingPage />} />
         <Route path="/" element={<Layout />}>
           <Route index element={<HomePage />} />
           <Route path="about" element={<AboutPage />} />

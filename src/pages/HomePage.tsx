@@ -169,7 +169,7 @@ export default function HomePage() {
               { src: "/homepage/commercial.jpg", alt: "Commercial", title: "Commercial Projects", desc: "Offices, retail, clinics — spaces that work hard and look professional.", href: "/contact", cta: "Talk to Us" },
             ].map((card) => (
               <motion.div key={card.title} variants={fadeUp} className="relative overflow-hidden group h-96">
-                <img src={card.src} alt={card.alt} loading="lazy" className="w-full h-full object-cover absolute inset-0 group-hover:scale-105 transition-transform duration-700" />
+                <img src={card.src} alt={card.alt} loading="lazy" width={800} height={384} className="w-full h-full object-cover absolute inset-0 group-hover:scale-105 transition-transform duration-700" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-black/5 group-hover:from-black/90 transition-all duration-500" />
                 <div className="absolute bottom-0 left-0 right-0 p-8">
                   <h3 className="text-2xl font-bold text-white mb-2">{card.title}</h3>
@@ -195,7 +195,7 @@ export default function HomePage() {
           <motion.div initial="hidden" whileInView="show" viewport={{ once: true, margin: "-60px" }} variants={stagger(0.08)} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 auto-rows-[240px]">
             {services.map((item) => (
               <motion.div key={item.title} variants={fadeUp} className={`relative overflow-hidden group ${item.wide && item.tall ? "lg:col-span-2 lg:row-span-2" : item.wide ? "lg:col-span-2" : ""}`}>
-                <img src={item.image} alt={item.title} loading="lazy" className="w-full h-full object-cover absolute inset-0 group-hover:scale-105 transition-transform duration-700" />
+                <img src={item.image} alt={item.title} loading="lazy" width={800} height={240} className="w-full h-full object-cover absolute inset-0 group-hover:scale-105 transition-transform duration-700" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent group-hover:from-black/90 transition-all duration-400" />
                 <div className="absolute bottom-0 left-0 right-0 p-6">
                   <h3 className="text-2xl font-bold text-white mb-2">{item.title}</h3>

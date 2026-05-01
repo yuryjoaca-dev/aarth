@@ -47,7 +47,7 @@ function QuoteForm({ compact = false }: { compact?: boolean }) {
     e.preventDefault();
     setLoading(true);
     try {
-      const res = await fetch("/api/contact", {
+      const res = await fetch((import.meta.env.VITE_API_URL ?? "") + "/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ ...formData, email: "via-landing@aarthconstruction.com", message: `Landing page lead — Project: ${formData.projectType}` }),

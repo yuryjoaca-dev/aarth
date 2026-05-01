@@ -6,7 +6,7 @@ import SEO from '../components/SEO'
 function StyledGoogleMap() {
   return (
     <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d518.2757824976627!2d-113.6048132626903!3d53.558004669510474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53a0213c395ea7ad%3A0xb846e04aa5c98811!2s16307%20111%20Ave%20NW%2C%20Edmonton%2C%20AB%20T5M%202S2%2C%20Canada!5e1!3m2!1sro!2sro!4v1757786951567!5m2!1sro!2sro"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2771.1401203779365!2d-113.60709008721722!3d53.55824977223628!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53a021926a1685ef%3A0x15b6fb3012d8a81a!2sAarth%20Construction!5e1!3m2!1sro!2spl!4v1777652309787!5m2!1sro!2spl"
       width="100%"
       height="450"
       style={{ border: 0 }}

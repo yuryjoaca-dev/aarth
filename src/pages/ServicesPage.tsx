@@ -100,7 +100,7 @@ export default function ServicesPage() {
               >
                 {/* Image */}
                 <motion.div variants={fadeUp} className="relative aspect-[4/3] lg:aspect-auto overflow-hidden">
-                  <img src={service.image} alt={service.title} className="w-full h-full object-cover absolute inset-0 hover:scale-105 transition-transform duration-700" />
+                  <img src={service.image} alt={service.title} loading="lazy" className="w-full h-full object-cover absolute inset-0 hover:scale-105 transition-transform duration-700" />
                   {/* Gold accent on bottom */}
                   <div className="absolute bottom-0 left-0 right-0 h-[2px] bg-gradient-to-r from-[#C9963B] to-transparent opacity-60" />
                   {/* Service number overlay */}

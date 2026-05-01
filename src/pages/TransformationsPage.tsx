@@ -85,9 +85,9 @@ function BeforeAfterSlider({ before, after, title }: { before: string; after: st
       onMouseDown={onMouseDown}
       onTouchStart={onTouchStart}
     >
-      <img src={after} alt={`After — ${title}`} className="absolute inset-0 w-full h-full object-cover" draggable={false} />
+      <img src={after} loading="lazy" alt={`After — ${title}`} className="absolute inset-0 w-full h-full object-cover" draggable={false} />
       <div className="absolute inset-0 overflow-hidden" style={{ clipPath: `inset(0 ${100 - pct}% 0 0)` }}>
-        <img src={before} alt={`Before — ${title}`} className="absolute inset-0 w-full h-full object-cover" draggable={false} />
+        <img src={before} loading="lazy" alt={`Before — ${title}`} className="absolute inset-0 w-full h-full object-cover" draggable={false} />
       </div>
       <div className="absolute top-0 bottom-0 w-px bg-white/70 pointer-events-none" style={{ left: `${pct}%` }} />
       <div className="absolute top-1/2 -translate-y-1/2 -translate-x-1/2 w-9 h-9 rounded-full bg-white shadow-xl flex items-center justify-center pointer-events-none" style={{ left: `${pct}%` }}>

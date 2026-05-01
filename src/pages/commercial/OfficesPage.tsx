@@ -133,7 +133,7 @@ export default function OfficesPage() {
           <motion.div initial="hidden" whileInView="show" viewport={{ once: true, margin: "-60px" }} variants={stagger(0.08)} className="grid grid-cols-2 lg:grid-cols-4 gap-3">
             {gallery.map((img) => (
               <motion.div key={img.src} variants={fadeUp} className="relative aspect-square overflow-hidden group">
-                <img src={img.src} alt={img.alt} className="w-full h-full object-cover absolute inset-0 group-hover:scale-105 transition-transform duration-700" />
+                <img src={img.src} alt={img.alt} loading="lazy" className="w-full h-full object-cover absolute inset-0 group-hover:scale-105 transition-transform duration-700" />
                 <div className="absolute inset-0 bg-[#111111]/0 group-hover:bg-[#111111]/20 transition-colors duration-300" />
               </motion.div>
             ))}

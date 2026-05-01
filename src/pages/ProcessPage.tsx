@@ -125,7 +125,7 @@ export default function ProcessPage() {
                   {/* Image side */}
                   <motion.div variants={fadeUp} className={`relative ${isEven ? 'lg:col-start-1' : ''}`}>
                     <div className="relative overflow-hidden aspect-[4/3]">
-                      <img src={step.image} alt={step.imageAlt} className="w-full h-full object-cover absolute inset-0" />
+                      <img src={step.image} alt={step.imageAlt} loading="lazy" className="w-full h-full object-cover absolute inset-0" />
                       <div className="absolute inset-0 bg-gradient-to-t from-[#111111]/20 to-transparent" />
                       {/* Step overlay */}
                       <div className="absolute top-6 left-6 bg-[#C9963B] px-3 py-1.5">

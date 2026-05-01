@@ -96,7 +96,7 @@ export default function ProjectsPage() {
         {/* Mobile */}
         <div className="flex flex-col md:hidden">
           <div className="relative h-[60vh]">
-            <img src="/homepage/transformation.jpg" alt="Before & After" className="w-full h-full object-cover absolute inset-0" />
+            <img src="/homepage/transformation.jpg" alt="Before &amp; After" loading="lazy" className="w-full h-full object-cover absolute inset-0" />
             <div className="absolute inset-0 bg-black/55 flex flex-col items-center justify-center text-center text-white px-6">
               <h1 className="text-3xl font-bold mb-5 tracking-tight">Before &amp; After</h1>
               <Link to="/transformations" className="inline-flex items-center gap-2 border border-[#C9963B] text-[#C9963B] hover:bg-[#C9963B] hover:text-white font-medium px-6 py-3 text-xs uppercase tracking-widest transition-all duration-300" style={{ fontFamily: 'Inter, sans-serif' }}>
@@ -105,7 +105,7 @@ export default function ProjectsPage() {
             </div>
           </div>
           <div className="relative h-[60vh]">
-            <img src="/homepage/commercial.jpg" alt="Commercial" className="w-full h-full object-cover absolute inset-0" />
+            <img src="/homepage/commercial.jpg" alt="Commercial" loading="lazy" className="w-full h-full object-cover absolute inset-0" />
             <div className="absolute inset-0 bg-black/55 flex flex-col items-center justify-center text-center text-white px-6">
               <h1 className="text-3xl font-bold mb-5 tracking-tight">Commercial Projects</h1>
               <Link to="/services" className="inline-flex items-center gap-2 border border-[#C9963B] text-[#C9963B] hover:bg-[#C9963B] hover:text-white font-medium px-6 py-3 text-xs uppercase tracking-widest transition-all duration-300" style={{ fontFamily: 'Inter, sans-serif' }}>
@@ -156,7 +156,7 @@ export default function ProjectsPage() {
               }
             }}
           >
-            <img src={item.image} alt={item.title} className="w-full h-full object-cover absolute inset-0 group-hover:scale-105 transition-transform duration-700" />
+            <img src={item.image} alt={item.title} loading="lazy" className="w-full h-full object-cover absolute inset-0 group-hover:scale-105 transition-transform duration-700" />
             <div className="absolute inset-0 bg-black/40 group-hover:bg-black/55 transition-all duration-500" />
             <div className="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-6">
               <h3 className="text-3xl font-bold mb-6 tracking-tight">{item.title}</h3>

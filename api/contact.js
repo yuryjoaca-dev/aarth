@@ -23,7 +23,7 @@ module.exports = async function handler(req, res) {
   try {
     await resend.emails.send({
       from: "Aarth Construction <yury@aarthconstruction.com>",
-      to: process.env.TO_EMAIL,
+      to: [process.env.TO_EMAIL, "vladimir@aarthconstruction.com"],
       replyTo: email,
       subject: `New Quote Request – ${escape(projectType)} from ${escape(name)}`,
       html: `

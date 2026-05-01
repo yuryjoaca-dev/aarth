@@ -1,92 +1,20 @@
-import { useEffect, useRef } from 'react'
 import { Link } from 'react-router-dom'
 import { ArrowRight, MapPin, Phone } from 'lucide-react'
 import { motion } from 'framer-motion'
 import SEO from '../components/SEO'
 
-const MAP_STYLES = [{"featureType":"all","elementType":"labels","stylers":[{"visibility":"on"}]},{"featureType":"all","elementType":"labels.text.fill","stylers":[{"saturation":36},{"color":"#000000"},{"lightness":40}]},{"featureType":"all","elementType":"labels.text.stroke","stylers":[{"visibility":"on"},{"color":"#000000"},{"lightness":16}]},{"featureType":"all","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#000000"},{"lightness":20}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"color":"#000000"},{"lightness":17},{"weight":1.2}]},{"featureType":"administrative.country","elementType":"labels.text.fill","stylers":[{"color":"#e5c163"}]},{"featureType":"administrative.locality","elementType":"labels.text.fill","stylers":[{"color":"#c4c4c4"}]},{"featureType":"administrative.neighborhood","elementType":"labels.text.fill","stylers":[{"color":"#e5c163"}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":20}]},{"featureType":"poi","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":21},{"visibility":"on"}]},{"featureType":"poi.business","elementType":"geometry","stylers":[{"visibility":"on"}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#e5c163"},{"lightness":"0"}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"visibility":"off"}]},{"featureType":"road.highway","elementType":"labels.text.fill","stylers":[{"color":"#ffffff"}]},{"featureType":"road.highway","elementType":"labels.text.stroke","stylers":[{"color":"#e5c163"}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":18}]},{"featureType":"road.arterial","elementType":"geometry.fill","stylers":[{"color":"#575757"}]},{"featureType":"road.arterial","elementType":"labels.text.fill","stylers":[{"color":"#ffffff"}]},{"featureType":"road.arterial","elementType":"labels.text.stroke","stylers":[{"color":"#2c2c2c"}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":16}]},{"featureType":"road.local","elementType":"labels.text.fill","stylers":[{"color":"#999999"}]},{"featureType":"transit","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":19}]},{"featureType":"water","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":17}]}]
-
-declare global {
-  interface Window {
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    google: any
-    initAarthMap: () => void
-  }
-}
-
 function StyledGoogleMap() {
-  const mapRef = useRef<HTMLDivElement>(null)
-  const apiKey = import.meta.env.VITE_GOOGLE_MAPS_API_KEY as string | undefined
-
-  useEffect(() => {
-    if (!apiKey || !mapRef.current) return
-
-    const scriptId = 'google-maps-js'
-    const init = () => {
-      if (!mapRef.current) return
-      const location = { lat: 53.5582498, lng: -113.6045098 }
-      const map = new window.google.maps.Map(mapRef.current, {
-        center: location,
-        zoom: 15,
-        styles: MAP_STYLES,
-        disableDefaultUI: false,
-        zoomControl: true,
-        mapTypeControl: false,
-        streetViewControl: false,
-        fullscreenControl: true,
-      })
-      const marker = new window.google.maps.Marker({
-        position: location,
-        map,
-        title: 'Aarth Construction Inc',
-      })
-      const infoWindow = new window.google.maps.InfoWindow({
-        content: `<div style="font-family:Inter,sans-serif;padding:4px 2px;min-width:180px">
-          <p style="font-weight:700;font-size:13px;margin:0 0 4px">Aarth Construction Inc</p>
-          <p style="font-size:12px;color:#555;margin:0;line-height:1.5">16307 111 Ave NW<br/>Edmonton, AB T5M 2S2</p>
-        </div>`,
-      })
-      marker.addListener('click', () => infoWindow.open(map, marker))
-      infoWindow.open(map, marker)
-    }
-
-    if (window.google?.maps) {
-      init()
-      return
-    }
-
-    window.initAarthMap = init
-    if (!document.getElementById(scriptId)) {
-      const script = document.createElement('script')
-      script.id = scriptId
-      script.src = `https://maps.googleapis.com/maps/api/js?key=${apiKey}&callback=initAarthMap`
-      script.async = true
-      script.defer = true
-      document.head.appendChild(script)
-    }
-  }, [apiKey])
-
-  if (!apiKey) {
-    return (
-      <div className="w-full h-[450px] bg-[#0a0a0a] border border-stone-800 flex flex-col items-center justify-center gap-3">
-        <MapPin className="w-8 h-8 text-[#C9963B]" />
-        <p className="text-slate-400 text-sm font-light" style={{ fontFamily: 'Inter, sans-serif' }}>
-          Add <code className="text-[#C9963B] text-xs bg-white/5 px-1.5 py-0.5">VITE_GOOGLE_MAPS_API_KEY</code> to your <code className="text-[#C9963B] text-xs bg-white/5 px-1.5 py-0.5">.env</code> file to enable the map.
-        </p>
-        <a
-          href="https://www.google.com/maps/search/Aarth+Construction+Inc+Edmonton"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-xs text-[#C9963B] underline underline-offset-2 hover:text-white transition-colors"
-          style={{ fontFamily: 'Inter, sans-serif' }}
-        >
-          View on Google Maps →
-        </a>
-      </div>
-    )
-  }
-
-  return <div ref={mapRef} className="w-full h-[450px]" />
+  return (
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d518.2757824976627!2d-113.6048132626903!3d53.558004669510474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53a0213c395ea7ad%3A0xb846e04aa5c98811!2s16307%20111%20Ave%20NW%2C%20Edmonton%2C%20AB%20T5M%202S2%2C%20Canada!5e1!3m2!1sro!2sro!4v1757786951567!5m2!1sro!2sro"
+      width="100%"
+      height="450"
+      style={{ border: 0 }}
+      allowFullScreen
+      loading="lazy"
+      referrerPolicy="no-referrer-when-downgrade"
+    />
+  )
 }
 
 const fadeUp = {

@@ -19,16 +19,18 @@ module.exports = async function handler(req, res) {
   }
 
   const transporter = nodemailer.createTransport({
-    service: "gmail",
+    host: "smtp.titan.email",
+    port: 465,
+    secure: true,
     auth: {
-      user: process.env.GMAIL_USER,
-      pass: process.env.GMAIL_APP_PASSWORD,
+      user: process.env.TITAN_EMAIL,
+      pass: process.env.TITAN_PASSWORD,
     },
   });
 
   try {
     await transporter.sendMail({
-      from: `"Aarth Construction Website" <${process.env.GMAIL_USER}>`,
+      from: `"Aarth Construction Website" <${process.env.TITAN_EMAIL}>`,
       to: process.env.TO_EMAIL,
       replyTo: email,
       subject: `New Quote Request – ${escape(projectType)} from ${escape(name)}`,

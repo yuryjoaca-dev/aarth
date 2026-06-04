@@ -1,23 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://www.aarthconstruction.com/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
-  <url><loc>https://www.aarthconstruction.com/about</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.aarthconstruction.com/services</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://www.aarthconstruction.com/projects</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.aarthconstruction.com/transformations</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.aarthconstruction.com/contact</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://www.aarthconstruction.com/faq</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.aarthconstruction.com/process</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.aarthconstruction.com/service-areas</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.aarthconstruction.com/residential/kitchens</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.aarthconstruction.com/residential/bathrooms</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.aarthconstruction.com/residential/basements</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.aarthconstruction.com/residential/flooring</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.aarthconstruction.com/commercial/offices</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.aarthconstruction.com/commercial/retail</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.aarthconstruction.com/commercial/restaurants</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.aarthconstruction.com/blog</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.aarthconstruction.com/renovations-edmonton</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.aarthconstruction.com/privacy-policy</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
-  <url><loc>https://www.aarthconstruction.com/terms</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <!-- Static pages -->
+  <url><loc>https://www.aarthconstruction.com/</loc><lastmod>2026-06-05</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://www.aarthconstruction.com/about</loc><lastmod>2026-06-05</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.aarthconstruction.com/services</loc><lastmod>2026-06-05</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.aarthconstruction.com/projects</loc><lastmod>2026-06-05</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.aarthconstruction.com/transformations</loc><lastmod>2026-06-05</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.aarthconstruction.com/contact</loc><lastmod>2026-06-05</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.aarthconstruction.com/faq</loc><lastmod>2026-06-05</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.aarthconstruction.com/process</loc><lastmod>2026-06-05</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.aarthconstruction.com/service-areas</loc><lastmod>2026-06-05</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <!-- Residential services -->
+  <url><loc>https://www.aarthconstruction.com/residential/kitchens</loc><lastmod>2026-06-05</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.aarthconstruction.com/residential/bathrooms</loc><lastmod>2026-06-05</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.aarthconstruction.com/residential/basements</loc><lastmod>2026-06-05</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.aarthconstruction.com/residential/flooring</loc><lastmod>2026-06-05</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <!-- Commercial services -->
+  <url><loc>https://www.aarthconstruction.com/commercial/offices</loc><lastmod>2026-06-05</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.aarthconstruction.com/commercial/retail</loc><lastmod>2026-06-05</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.aarthconstruction.com/commercial/restaurants</loc><lastmod>2026-06-05</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <!-- Blog & landing -->
+  <url><loc>https://www.aarthconstruction.com/blog</loc><lastmod>2026-06-05</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.aarthconstruction.com/renovations-edmonton</loc><lastmod>2026-06-05</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <!-- Legal -->
+  <url><loc>https://www.aarthconstruction.com/privacy-policy</loc><lastmod>2026-06-05</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://www.aarthconstruction.com/terms</loc><lastmod>2026-06-05</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <!-- Blog posts -->
+  <url><loc>https://www.aarthconstruction.com/blog/kitchen-renovation-guide-edmonton</loc><lastmod>2026-03-05</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.aarthconstruction.com/blog/5-signs-bathroom-needs-renovation</loc><lastmod>2026-02-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.aarthconstruction.com/blog/basement-finishing-what-to-know</loc><lastmod>2026-02-03</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.aarthconstruction.com/blog/best-flooring-options-edmonton-homes</loc><lastmod>2026-01-22</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.aarthconstruction.com/blog/how-to-choose-right-contractor-edmonton</loc><lastmod>2026-01-09</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.aarthconstruction.com/blog/commercial-renovation-office-fitout-guide</loc><lastmod>2025-12-14</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.aarthconstruction.com/blog/which-renovations-best-roi-edmonton</loc><lastmod>2025-11-28</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.aarthconstruction.com/blog/renovation-timelines-why-projects-take-longer</loc><lastmod>2025-11-12</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.aarthconstruction.com/blog/edmonton-renovation-permits-guide</loc><lastmod>2025-10-29</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.aarthconstruction.com/blog/building-a-deck-edmonton-guide</loc><lastmod>2025-10-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.aarthconstruction.com/blog/quartz-vs-granite-countertops-kitchen</loc><lastmod>2025-09-24</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.aarthconstruction.com/blog/how-to-choose-bathroom-tile-that-lasts</loc><lastmod>2025-09-08</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.aarthconstruction.com/blog/legal-basement-suite-edmonton-2026</loc><lastmod>2025-08-20</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.aarthconstruction.com/blog/interior-painting-professional-finish</loc><lastmod>2025-08-05</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.aarthconstruction.com/blog/when-to-replace-windows-edmonton</loc><lastmod>2025-07-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.aarthconstruction.com/blog/insulation-upgrades-that-save-money-edmonton</loc><lastmod>2025-07-02</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.aarthconstruction.com/blog/converting-attached-garage-edmonton</loc><lastmod>2025-06-15</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.aarthconstruction.com/blog/retail-fit-out-commercial-space-design</loc><lastmod>2025-05-28</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.aarthconstruction.com/blog/master-ensuite-most-requested-renovation-2026</loc><lastmod>2025-05-12</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.aarthconstruction.com/blog/kitchen-islands-design-costs-what-works</loc><lastmod>2025-04-24</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.aarthconstruction.com/blog/home-addition-planning-edmonton</loc><lastmod>2025-04-07</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.aarthconstruction.com/blog/mudroom-design-edmonton-homes</loc><lastmod>2025-03-20</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.aarthconstruction.com/blog/open-concept-renovation-load-bearing-walls</loc><lastmod>2025-03-03</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.aarthconstruction.com/blog/home-office-renovation-design-guide</loc><lastmod>2025-02-12</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.aarthconstruction.com/blog/laundry-room-renovation-guide</loc><lastmod>2025-01-27</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.aarthconstruction.com/blog/custom-millwork-built-ins-edmonton</loc><lastmod>2025-01-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.aarthconstruction.com/blog/aging-in-place-renovation-edmonton</loc><lastmod>2024-12-20</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.aarthconstruction.com/blog/heritage-home-renovation-challenges-edmonton</loc><lastmod>2024-12-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.aarthconstruction.com/blog/outdoor-kitchen-design-costs-edmonton</loc><lastmod>2024-11-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.aarthconstruction.com/blog/renovation-financing-options-edmonton</loc><lastmod>2024-11-02</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.aarthconstruction.com/blog/spa-bathroom-design-trends-edmonton</loc><lastmod>2024-10-15</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.aarthconstruction.com/blog/restaurant-food-service-fit-out-edmonton</loc><lastmod>2024-09-30</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.aarthconstruction.com/blog/renovation-mistakes-to-avoid-edmonton</loc><lastmod>2024-09-13</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.aarthconstruction.com/blog/heated-driveway-snowmelt-systems-edmonton</loc><lastmod>2024-08-28</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.aarthconstruction.com/blog/smart-home-technology-renovation-integration</loc><lastmod>2024-08-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.aarthconstruction.com/blog/commercial-medical-dental-fit-out-edmonton</loc><lastmod>2024-07-24</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
 </urlset>

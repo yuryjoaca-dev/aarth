@@ -21,7 +21,7 @@ export async function POST(req: NextRequest) {
   try {
     await resend.emails.send({
       from: 'Aarth Construction <office@aarthconstruction.com>',
-      to: [process.env.TO_EMAIL!, 'vladimir@aarthconstruction.com', 'office@aarthconstruction.com'],
+      to: [process.env.TO_EMAIL!, 'vladimir@aarthconstruction.com'],
       replyTo: email,
       subject: `New Quote Request – ${escape(projectType)} from ${escape(name)}`,
       html: `

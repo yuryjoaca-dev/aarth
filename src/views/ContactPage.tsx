@@ -102,8 +102,8 @@ export default function ContactPage() {
             </motion.li>
             <motion.li variants={fadeUp} className="flex items-center gap-4 p-4 border border-stone-200 bg-stone-50">
               <Mail className="w-4 h-4 text-[#C9963B] flex-shrink-0" />
-              <a href="mailto:aarth.construct@gmail.com" className="font-medium text-sm text-slate-800 hover:text-[#C9963B] transition-colors" style={{ fontFamily: 'Inter, sans-serif' }}>
-                Aarth.construct@gmail.com
+              <a href="mailto:office@aarthconstruction.com" className="font-medium text-sm text-slate-800 hover:text-[#C9963B] transition-colors" style={{ fontFamily: 'Inter, sans-serif' }}>
+                office@aarthconstruction.com
               </a>
             </motion.li>
             <motion.li variants={fadeUp} className="flex items-center gap-4 p-4 border border-stone-200 bg-stone-50">

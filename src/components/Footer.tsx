@@ -140,8 +140,8 @@ export default function Footer() {
               </li>
               <li className="flex gap-3">
                 <Mail className="w-4 h-4 text-[#C9963B] flex-shrink-0 mt-0.5" />
-                <a href="mailto:aarth.construct@gmail.com" className="text-sm text-slate-400 hover:text-[#C9963B] transition-colors break-all font-light" style={{ fontFamily: 'Inter, sans-serif' }}>
-                  Aarth.construct@gmail.com
+                <a href="mailto:office@aarthconstruction.com" className="text-sm text-slate-400 hover:text-[#C9963B] transition-colors break-all font-light" style={{ fontFamily: 'Inter, sans-serif' }}>
+                  office@aarthconstruction.com
                 </a>
               </li>
             </ul>

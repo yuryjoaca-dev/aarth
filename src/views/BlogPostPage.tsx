@@ -250,11 +250,11 @@ export default function BlogPostPage() {
                     587-596-2793
                   </a>
                   <a
-                    href="mailto:info@aarthconstruction.ca"
+                    href="mailto:office@aarthconstruction.com"
                     className="text-slate-400 text-xs font-light"
                     style={{ fontFamily: 'Inter, sans-serif' }}
                   >
-                    info@aarthconstruction.ca
+                    office@aarthconstruction.com
                   </a>
                 </div>
               </motion.div>

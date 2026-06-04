@@ -30,7 +30,7 @@ const localBusinessSchema = {
   logo: 'https://www.aarthconstruction.com/logo/logo.webp',
   image: 'https://www.aarthconstruction.com/logo/logo.webp',
   telephone: '+15875962793',
-  email: 'aarth.construct@gmail.com',
+  email: 'office@aarthconstruction.com',
   description: 'Licensed renovation contractor serving Edmonton and Alberta. Expert kitchen, bathroom, basement, and flooring renovations. Commercial fit-outs across Alberta, BC, and Saskatchewan.',
   priceRange: '$$',
   address: {

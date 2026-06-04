@@ -75,8 +75,8 @@ export default function PrivacyPolicyPage() {
           <p className="leading-relaxed">
             You have the right to request access, correction, or deletion of your
             data at any time by contacting us at{" "}
-            <a href="mailto:aarth.construct@gmail.com" className="text-[#f5a623] underline underline-offset-2 hover:text-[#d4891a] transition-colors">
-              Aarth.construct@gmail.com
+            <a href="mailto:office@aarthconstruction.com" className="text-[#f5a623] underline underline-offset-2 hover:text-[#d4891a] transition-colors">
+              office@aarthconstruction.com
             </a>.
           </p>
         </div>

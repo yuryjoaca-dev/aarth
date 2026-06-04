@@ -1,17 +1,19 @@
-import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
-import { Phone, ArrowRight, X } from "lucide-react";
-import { motion, AnimatePresence } from "framer-motion";
+'use client'
+
+import { useEffect, useState } from 'react'
+import Link from 'next/link'
+import { Phone, ArrowRight, X } from 'lucide-react'
+import { motion, AnimatePresence } from 'framer-motion'
 
 export default function StickyCallBar() {
-  const [visible, setVisible] = useState(false);
-  const [dismissed, setDismissed] = useState(false);
+  const [visible, setVisible] = useState(false)
+  const [dismissed, setDismissed] = useState(false)
 
   useEffect(() => {
-    const handleScroll = () => { if (!dismissed) setVisible(window.scrollY > 300); };
-    window.addEventListener("scroll", handleScroll, { passive: true });
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, [dismissed]);
+    const handleScroll = () => { if (!dismissed) setVisible(window.scrollY > 300) }
+    window.addEventListener('scroll', handleScroll, { passive: true })
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [dismissed])
 
   return (
     <AnimatePresence>
@@ -31,10 +33,10 @@ export default function StickyCallBar() {
               <span>587-596-2793</span>
             </a>
             <div className="flex items-center gap-2">
-              <Link to="/contact" className="inline-flex items-center gap-1.5 border border-[#C9963B] text-[#C9963B] hover:bg-[#C9963B] hover:text-white font-medium text-xs px-5 py-2 uppercase tracking-widest transition-all duration-200 whitespace-nowrap">
+              <Link href="/contact" className="inline-flex items-center gap-1.5 border border-[#C9963B] text-[#C9963B] hover:bg-[#C9963B] hover:text-white font-medium text-xs px-5 py-2 uppercase tracking-widest transition-all duration-200 whitespace-nowrap">
                 Free Quote <ArrowRight className="w-3 h-3" />
               </Link>
-              <button onClick={() => { setDismissed(true); setVisible(false); }} className="w-6 h-6 flex items-center justify-center text-slate-500 hover:text-white transition-colors" aria-label="Dismiss">
+              <button onClick={() => { setDismissed(true); setVisible(false) }} className="w-6 h-6 flex items-center justify-center text-slate-500 hover:text-white transition-colors" aria-label="Dismiss">
                 <X className="w-3.5 h-3.5" />
               </button>
             </div>
@@ -42,5 +44,5 @@ export default function StickyCallBar() {
         </motion.div>
       )}
     </AnimatePresence>
-  );
+  )
 }
